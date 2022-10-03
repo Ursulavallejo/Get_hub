@@ -1,2 +1,2 @@
-# Get_hub
- Next.js-GraphQl-Contenful
+# Get_hub   
+ Next.js-Contentful
