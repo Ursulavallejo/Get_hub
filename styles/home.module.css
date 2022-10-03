@@ -1,0 +1,152 @@
+.container {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+.container .wrapper {
+  max-width: 1400px;
+  margin: auto;
+}
+
+.headerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow-x: hidden;
+  padding-top: 3.12rem;
+}
+@media (min-width: 768px) {
+  .headerContainer {
+    padding: 2rem;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: hidden;
+  }
+}
+@media (min-width: 1024px) {
+  .headerContainer {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    max-height: 76vh;
+    overflow-y: hidden;
+  }
+}
+
+.header {
+  text-align: center;
+  width: 80%;
+  margin-bottom: 1.3rem;
+  overflow-x: hidden;
+  font-size: 30px;
+  margin: 1.5rem auto;
+}
+@media (min-width: 768px) {
+  .header {
+    overflow-x: hidden;
+    width: 80%;
+    line-height: 5.31rem;
+    position: relative;
+    font-size: 40px;
+  }
+}
+@media (min-width: 1024px) {
+  .header {
+    text-align: left;
+    font-size: 55px;
+    width: auto;
+    padding-top: 80px;
+  }
+}
+
+.introText {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .introText {
+    width: 32.69rem;
+    font-size: 20px;
+    line-height: 1.8rem;
+    padding-bottom: 12.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .introText {
+    text-align: left;
+    margin: 0;
+  }
+}
+
+.textDiv {
+  margin-top: -3rem;
+}
+@media (min-width: 1024px) {
+  .textDiv {
+    width: 45%;
+  }
+}
+
+.imgContainer {
+  width: 100%;
+  margin-bottom: 1.7rem;
+}
+@media (min-width: 768px) {
+  .imgContainer {
+    width: 51.2rem;
+    margin-top: -10rem;
+  }
+}
+@media (min-width: 1024px) {
+  .imgContainer {
+    position: absolute;
+    right: 0;
+    margin: 0;
+    width: 50%;
+  }
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+}
+
+.button {
+  width: 10.438rem;
+  height: 2.5rem;
+  background-color: var(--getHubLime);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  font-size: 20px;
+  margin-bottom: 5.5rem;
+  cursor: pointer;
+}
+@media (min-width: 1024px) {
+  .button {
+    visibility: hidden;
+    width: 1px;
+  }
+}
+
+.buttonText {
+  visibility: hidden;
+}
+@media (min-width: 768px) {
+  .buttonText {
+    margin-left: 10rem;
+    width: 13.18rem;
+    height: 3rem;
+    position: absolute;
+    left: 0;
+    bottom: 18%;
+  }
+}/*# sourceMappingURL=home.module.css.map */

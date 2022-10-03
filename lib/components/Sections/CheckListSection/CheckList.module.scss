@@ -1,0 +1,96 @@
+@import "../../../../styles/breakpoints.scss";
+
+.container{
+  background-color: #2c5372;
+  box-sizing: border-box;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 24px;
+  @include respond-to("s"){
+    padding: 20px 45px;
+  }
+
+  @include respond-to("m") {
+    padding: 50px  45px;
+  }
+  @include respond-to("l") {
+    padding: 50px  24px;
+  }}
+
+.iconContainer {
+  color: var(--getHubLime);
+  margin-bottom: 1em;
+  margin-right: 1em;
+
+}
+
+
+.wrapper {
+  max-width: 1600px;
+  margin: auto;
+  height: auto;
+  padding-bottom: 2rem;
+  padding-top: 2.5rem;
+  @include respond-to("s"){
+    padding-bottom: 3rem;
+  }
+  @include respond-to("m"){
+    padding-top: 3.5rem;
+    padding-bottom: 5.5rem;
+  }
+  @include respond-to("l"){
+    padding-top: 4.5rem;
+  }
+
+}
+.itemContainer {
+  display: block;
+  gap: 0.5em;
+
+
+  @include respond-to("s") {
+    gap: 0.5em;
+  }
+  @include respond-to("m") {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+  }
+}
+
+.item {
+  width: 100%;
+  padding-top: 3em;
+  h2{
+    font-size: 24px;
+    margin-bottom: 1em;
+  }
+  p{
+    font-size: 16px;
+  }
+  @include respond-to("s"){
+    max-height: 245px;
+    width: 100%;
+    h2{
+      font-size: 32px;
+      margin-bottom: 1em;
+    }
+  }
+  @include respond-to("m"){
+    width: 40%;
+  }
+  @include respond-to("l"){
+    width: 25%;
+  }
+
+}
+
+.mobileIconText{
+  display: flex;
+  flex-direction: row;
+  @include respond-to("m"){
+    display: initial;
+  }
+}

@@ -1,0 +1,61 @@
+# Docker
+# Build and push an image to Azure Container Registry
+# https://docs.microsoft.com/azure/devops/pipelines/languages/docker
+
+trigger:
+  - main
+
+resources:
+  - repo: self
+
+variables:
+  vmImageName: "ubuntu-latest"
+  dockerfilePath: "$(Build.SourcesDirectory)/Dockerfile"
+  tag: "$(Build.SourceVersion)"
+
+  dockerRegistryServiceConnection: "gethub-cr-sc"
+  containerRegistry: "gethubcr.azurecr.io"
+  imageRepository: "gethub-sale-prod"
+
+  azureSubscriptionSc: "gethub-sale-sc"
+  resourceGroup: "gethub-sale"
+  appName: "gethub-sale-prod"
+
+stages:
+  - stage: Build
+    displayName: Build and push stage
+    jobs:
+      - job: Build
+        displayName: Build
+        pool:
+          vmImage: $(vmImageName)
+        steps:
+          - task: Docker@2
+            displayName: Build image
+            inputs:
+              containerRegistry: "$(dockerRegistryServiceConnection)"
+              repository: "$(imageRepository)"
+              command: "build"
+              Dockerfile: "**/Dockerfile"
+              tags: "$(tag)"
+              arguments: '--build-arg VERSION=$(tag) --build-arg NEXT_PUBLIC_SPACE_ID="b3ngtxa7htw5" --build-arg NEXT_PUBLIC_ENVIRONMENT="master" --build-arg NEXT_PUBLIC_CONTENT_DELIVERY_TOKEN="$(CONTENTFUL_APIKEY)" --build-arg NEXT_PUBLIC_SENDGRID_API_KEY="$(SENDGRID_API_KEY)"'
+          - task: Docker@2
+            displayName: Push image to container registry
+            inputs:
+              containerRegistry: "$(dockerRegistryServiceConnection)"
+              repository: "$(imageRepository)"
+              command: "push"
+              tags: "$(tag)"
+          - task: AzureRmWebAppDeployment@4
+            displayName: Deploy image
+            inputs:
+              ConnectionType: "AzureRM"
+              azureSubscription: "$(azureSubscriptionSc)"
+              appType: "webAppContainer"
+              WebAppName: "$(appName)"
+              deployToSlotOrASE: true
+              ResourceGroupName: "$(resourceGroup)"
+              SlotName: "production"
+              DockerNamespace: "$(containerRegistry)"
+              DockerRepository: "$(imageRepository)"
+              DockerImageTag: "$(Build.SourceVersion)"

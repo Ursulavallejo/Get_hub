@@ -1,0 +1,241 @@
+@import "../../../../styles/breakpoints.scss";
+
+.wrapper {
+  box-sizing: border-box;
+  margin: 0;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0px 100px 0px;
+  position: relative;
+
+  @include respond-to("s") {
+    background: transparent;
+    padding: 6.7em 1.5em;
+  }
+ 
+
+  @include respond-to("m") {
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 40px 0px;
+    padding: 60px 80px 100px 80px;
+
+  }
+
+  @include respond-to("l") {
+    margin: 40px 0px;
+  }
+}
+
+.left {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-color: transparent;
+  z-index: 2;
+
+
+
+  @include respond-to("m") {
+    width: 30%;
+    margin: 0 20px;
+  
+  }
+  
+}
+
+.logo {
+    width:720px;
+    height: 865px;
+    position: absolute;
+    top: 7%;
+    left: -4%;
+    background: url('../../../../styles/assets/images/bg-faq.png');
+    background-position: 0%;
+    background-repeat: no-repeat;
+    background-size: 74%;
+    z-index: 1;
+    opacity: 0.5;
+    overflow: hidden;
+    padding: 0;
+    z-index: -100;
+  
+  @include respond-to("l") {
+    width:720px;
+    height: 855px;
+    position: absolute;
+    top: 5%;
+    left: -4%;
+    background-position:80%;
+    background-repeat: no-repeat;
+    background-size: 88%;
+    z-index: 1;
+    opacity: 0.5;
+    overflow: hidden;
+  }
+
+  @include respond-to("xl") {
+    background-position:60%;
+    background-size: 85%;
+    width:760px;
+    height: 865px;
+  }
+}
+
+.header {
+  font-family: "Poppins-bold";
+  color: var(--primary-text);
+  font-size: 42px;
+  width: 100%;
+  margin-bottom: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+
+
+  @include respond-to("s") {
+    width: 90%;
+    text-align: left;
+
+
+  }
+
+
+
+  @include respond-to("m") {
+    position: absolute;
+    top: 0;
+    left: 10%;
+    z-index: 3;
+    width: 30%;
+    margin-top: 5.5em;
+  }
+
+  @include respond-to("l") {
+    width: 25%;
+  }
+}
+
+.right {
+  width: 100%;
+  background-color: transparent;
+  z-index: 100;
+
+
+  @include respond-to("m") {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 9em;
+    margin-right: -100px;
+  }
+
+  @include respond-to("xl") {
+    height: 38rem;
+  }
+}
+
+.introText {
+  max-width: 650px;
+
+  h1 {
+    font-size: 23px;
+    font-family: "Poppins-Bold";
+    text-align: left;
+    line-height: 38px;
+    margin-bottom: 25px;
+
+    @include respond-to("s") {
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+  }
+
+  p {
+    font-family: "Poppins";
+    width: 370px;
+    font-size: 19px;
+    margin-bottom: 50px;
+    width: 100%;
+
+    @include respond-to("s") {
+      text-align: left;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.question {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 30px;
+  cursor: pointer;
+  width: 100%;
+  padding-left: 12px;
+
+  p {
+    width: 90%;
+    font-size: 23px;
+    font-family: "Poppins-bold";
+    text-align: left;
+    margin-bottom: 25px;
+    color: var(--primary-text);
+    padding-top: 0px;
+  }
+
+  @include respond-to("s") {
+    width: 100%;
+    font-size: 30px;
+    justify-content: space-between;
+    align-items: flex-start; 
+
+    p {
+      width: 90%;
+      padding-bottom: 1rem;
+    }
+  }
+}
+
+.greendot {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: var(--getHubLime);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--secondary-text);
+  cursor: pointer;
+  margin-top: 5px;
+  transition: rotate 0.4s ease-out;
+  margin-right: 12px;
+
+  @include respond-to("s") {
+    margin-top: 0px;
+  }
+
+  &.rotate {
+    rotate: 180deg;
+  }
+}
+
+.answer {
+  padding-bottom: 2rem;
+  display: block;
+  width: 100%;
+  max-width: 600px;
+}
+
+.hidden {
+  display: none;
+}

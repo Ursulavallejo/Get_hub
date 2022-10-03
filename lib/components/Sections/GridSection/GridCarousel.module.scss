@@ -1,0 +1,97 @@
+@import "../../../../styles/breakpoints.scss";
+
+
+.item {
+  width: Max(250px, 80%);
+  height: Max(250px, 65%);
+  margin: 35px;
+  padding: 25px;
+  background-color: var(--background-color);
+  border-radius: 10px;
+
+  p {
+    padding-top: 1em;
+  }
+
+  @include respond-to("s") {
+    gap: 12px;
+    height: Max(250px, 80%);
+  }
+
+  p {
+    font-size: 16px;
+  }
+  h4 {
+    color: var(--primary-text);
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 6px;
+  }
+
+  @include respond-to("m") {
+    margin: 18px;
+    padding: 1.5em;
+    margin-bottom: 2em;
+  }
+  @include respond-to("l") {
+    margin-bottom: 3em;
+  }
+}
+
+.iconContainer {
+ // background-color: var(--getHubLime);
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 18px;
+}
+
+
+.splide {
+  //display: block;
+  display: flex;
+  //max-width: 600px;
+  max-width: 850px;
+  height: 40vh;
+  margin-top: 40px;
+  overflow-x: scroll;
+ -webkit-overflow-scrolling: touch;
+
+ 
+
+
+
+  @include respond-to("s") {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 1em;
+    margin-bottom: 2rem;
+    height: 100%;
+    //height: 100vh;
+    overflow: hidden;
+   // max-width: 850px;
+   display:none;
+  
+  }
+  @include respond-to("m") {
+    grid-auto-rows: 1fr 1fr;
+    margin-bottom: 2.5rem;
+    column-gap: 1.5em;
+
+    //height: 130vh;
+
+  }
+  @include respond-to("l") {
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 2em;
+    //max-width: 900px;
+    //height: 60vh;
+    
+    
+  }
+}
+
+

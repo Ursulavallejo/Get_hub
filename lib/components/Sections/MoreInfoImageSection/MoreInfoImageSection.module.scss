@@ -1,0 +1,129 @@
+@import "../../../../styles/breakpoints.scss";
+
+.container {
+  box-sizing: border-box;
+  color: white;
+  margin: 4em 0;
+  display: block;
+  justify-content: center;
+  align-items: center;
+
+  @include respond-to("m") {
+    display: flex;
+    margin: 8em 2em 2em 3em;
+  }
+  @include respond-to("l") {
+    margin: 4em 2em 0 2em;
+
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 1600px;
+    margin: auto;
+
+    @include respond-to("m") {
+      margin: 20px auto 0 20px ;
+      flex-direction: row;
+    }
+    @include respond-to("l") {
+      margin: 1em auto 0 1em;
+      flex-direction: row;
+    }
+  }
+}
+
+.left {
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
+  @include respond-to("s") {
+    display: flex;
+    width: 70%;
+  }
+
+  @include respond-to("m") {
+    width: 50%;
+    margin-bottom: -13em;
+  }
+
+  @include respond-to("l") {
+
+    width: 60%;
+    margin-left: 4em;
+    margin-bottom: -6.5em;
+
+
+  }
+}
+
+
+.right {
+  justify-content: center;
+  margin-left: 1em;
+  margin-top: 1rem;
+  width: 90%;
+  padding-left: 2em;
+  padding-right: 1em;
+
+
+
+  h2, p {
+    text-align: left;
+    margin-bottom: 2.5rem;
+    margin-top: 1rem;
+  }
+
+  @include respond-to("s"){
+    padding-right: 2.5em;
+    margin-left: 3em;
+
+  }
+  @include respond-to("m") {
+    margin-top: 1rem;
+    width: 50%;
+    margin-right: 1em;
+    h1{
+      font-size: 40px;
+    }
+    }
+    h2 {
+      text-align: left;
+      padding-bottom: 1em;
+
+    p {
+      text-align: left;
+      padding-bottom: 1em;
+    }
+  }
+  li {
+    color: var(--getHubLime);
+  }
+  @include respond-to("l"){
+    width: 90%;
+    margin-left: 7em;
+    padding-top: 3em;
+    h1{
+      font-size: 50px;
+    }
+  }
+}
+
+.ulWrapper {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 2rem;
+}
+
+.ul{
+  margin-top: 4em;
+}
+
+.greendot{
+  color: var(--getHubLime);
+
+}

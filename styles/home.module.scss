@@ -1,0 +1,150 @@
+@import "../styles/breakpoints.scss";
+
+.container {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  position: relative;
+  background-color: #112231;
+  margin-top: 200px;
+
+  @include respond-to("l") {
+    margin-top: 320px;
+  }
+ 
+
+  .wrapper {
+    max-width: 1400px;
+    margin: auto;
+    
+  }
+}
+
+.headerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow-x: hidden;
+  padding-top: 3.12rem;
+
+  @include respond-to("s") {
+    padding: 2rem;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: hidden;
+  }
+  @include respond-to("m") {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    max-height: 78vh;
+    overflow-y: hidden;
+  }
+}
+
+.header {
+  text-align: center;
+  width: 80%;
+  margin-bottom: 1.3rem;
+  overflow-x: hidden;
+  font-size: 30px;
+  margin: 1.5rem auto;
+
+  @include respond-to("s") {
+    overflow-x: hidden;
+    width: 80%;
+    line-height: 5.31rem;
+    position: relative;
+    font-size: 40px;
+  }
+
+  @include respond-to("m") {
+    text-align: left;
+    font-size: 55px;
+    width: auto;
+    padding-top: 80px;
+  }
+}
+
+.introText {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+
+  @include respond-to("s") {
+    width: 32.69rem;
+
+    font-size: 20px;
+    line-height: 1.8rem;
+    padding-bottom: 12.5rem;
+  }
+  @include respond-to("m") {
+    text-align: left;
+    margin: 0;
+  }
+}
+
+.textDiv {
+  margin-top: -3rem;
+  @include respond-to("m") {
+    width: 45%;
+  }
+}
+
+.imgContainer {
+  width: 100%;
+  margin-bottom: 1.7rem;
+
+  @include respond-to("s") {
+    width: 51.2rem;
+    margin-top: -10rem;
+  }
+
+  @include respond-to("m") {
+    position: absolute;
+    right: 0;
+    margin: 0;
+    width: 50%;
+  }
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+}
+
+.button {
+  width: 10.438rem;
+  height: 2.5rem;
+  background-color: var(--getHubLime);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  font-size: 20px;
+  margin-bottom: 5.5rem;
+  cursor: pointer;
+
+  @include respond-to("m") {
+    visibility: hidden;
+    width: 1px;
+  }
+}
+
+.buttonText {
+  visibility: hidden;
+
+  @include respond-to("s") {
+    margin-left: 10rem;
+    width: 13.18rem;
+    height: 3rem;
+    position: absolute;
+    left: 0;
+    bottom: 18%;
+  }
+}

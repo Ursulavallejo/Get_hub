@@ -1,0 +1,197 @@
+@import "../../../styles/breakpoints";
+
+
+.container {
+  box-sizing: border-box;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2.6rem;
+  padding-right: 2.6rem;
+  padding-top: 0;
+  overflow-x: hidden;
+  background: var(--background);
+  position: fixed;
+  width: 100%;
+  height: 14vh;
+  z-index: 20;
+  overflow-y: hidden;
+  top: 0;
+
+  @include respond-to("s") {
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+
+  @include respond-to("m") {
+    padding-right: 8rem;
+    padding-left: 8rem;
+  }
+
+  @include respond-to("l") {
+    align-items: center;
+    padding-right: 10rem;
+    padding-left: 10rem;
+  }
+}
+
+.imgContainer {
+  margin-top: 15px;
+  width: 7rem;
+  height: auto;
+  cursor: pointer;
+
+
+  @include respond-to("s") {
+    margin-top: 0;
+    width: 8.5rem;
+
+  }
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.button {
+  margin-top: 20px;
+  width: 110px;
+  height: 35px;
+  border-radius: 30px;
+  font-family: "Poppins";
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--secondary-text);
+  background-color: var(--getHubLime);
+  cursor: pointer;
+
+  @include respond-to("s") {
+    margin-top: 0;
+  }
+  @include respond-to("m") {
+    font-size: 20px;
+  }
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background: transparent;
+}
+
+.linkItem {
+  visibility: hidden;
+
+  @include respond-to("s") {
+    visibility: visible;
+    font-family: "Poppins";
+    color: var(--primary-text);
+    font-size: 18px;
+    width: 6rem;
+    cursor: pointer;
+  }
+
+  @include respond-to("m") {
+    font-size: 20px;
+    width: 8rem;
+  }
+}
+
+.linkItem a:hover {
+  color: var(--getHubLime);
+  transition: all 0.2s ease-in;
+}
+
+.homeItem{
+  color: var(--primary-text);
+  cursor: pointer;
+  width: 0.5rem;
+  padding-top: 1.5em;
+
+
+  @include respond-to("s"){
+    width: 1rem;
+    margin-bottom: 1.2em;
+  }
+  @include respond-to("m") {
+    width: 2rem;
+  }
+  @include respond-to("m") {
+    width: 3rem;
+  }
+}
+
+.homeItem:hover {
+  color: var(--getHubLime);
+  transition: all 0.2s ease-in;
+}
+
+.homeText{
+  padding-left: 2.5em;
+  @include respond-to("s"){
+    padding-left: 1.5em;
+
+  }
+
+}
+
+.button a:hover {
+  color: var(--primary-text);
+  transition: all 0.2s ease-in;
+}
+
+.button a:focus {
+  color: var(--primary-text);
+  transition: all 0.2s ease-in;
+}
+
+.language {
+  margin-top: 5px;
+  color: white;
+  position: absolute;
+  font-size: 14px;
+  top: 5px;
+  right: 20px;
+  cursor: pointer;
+  @include respond-to("s"){
+    top: 10px;
+  }
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+  }
+}
+
+.language a:hover {
+  color: var(--getHubLime);
+  transition: all 0.2s ease-in;
+}
+
+.icon {
+  size: 600px;
+}
+
+.background {
+  background-color: #fff;
+  width: 100%;
+  height: 20vh;
+
+  transition: 1s ease-in-out;
+}

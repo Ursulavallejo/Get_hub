@@ -1,0 +1,137 @@
+@import "../../../../styles/breakpoints.scss";
+
+.container {
+  background-color: var(--lightBlue);
+  margin: 0;
+  padding: 4em 1em;
+  width: 100%;
+  align-items: center;
+
+  @include respond-to("s") {
+    padding-left: 2.5em;
+  }
+
+  @include respond-to("m") {
+    padding: 6em 1em;
+  }
+
+  .wrapper {
+    padding-left: 8px;
+    @include respond-to("m") {
+      width: 60%;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .formGroup {
+      @include respond-to("m") {
+        width: 80%;
+        max-width: 1000px;
+        margin-right: 40px;
+      }
+    }
+  }
+}
+
+.headerContainer {
+  margin-bottom: 2em;
+  h4 {
+    margin-bottom: 0.5em;
+    font-size: 22px;
+    font-family: "Poppins-Bold";
+    font-weight: 100;
+  }
+
+  h2 {
+    font-size: 42px;
+  }
+  h2 {
+    @include respond-to("m") {
+      font-size: 36px;
+    }
+  }
+}
+
+.contactUs {
+  width: 100%;
+  align-items: center;
+
+  @include respond-to("l") {
+  }
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 20px;
+
+  @include respond-to("m") {
+    font-size: 40px;
+    gap: 10px;
+    margin-bottom: 10px;
+    align-items: flex-start;
+  }
+}
+
+.styleContact {
+  color: var(--background-color);
+  font-size: 30px;
+  @include respond-to("l") {
+    font-size: 26px;
+    width: 100%;
+    margin-bottom: 1em;
+  }
+}
+
+.header {
+  color: var(--background-color);
+  font-family: "Poppins-bold";
+  margin-bottom: 1em;
+  @include respond-to("l") {
+    font-size: 36px;
+  }
+}
+
+.buttonStyle {
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  background-color: var(--background-color);
+  margin: 1.5em 0.1em;
+  padding: 8px 20px;
+  border-radius: 30px;
+  border: none;
+  color: var(--primary-text);
+  width: 183px;
+  cursor: pointer;
+}
+
+.buttonStyle:hover {
+  color: var(--getHubLime);
+  transition: all 0.2s ease-in;
+}
+
+.field {
+  position: relative;
+  outline: none;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom-color: var(--background-color);
+  font-size: 18px;
+  text-align: center;
+  background-color: var(--lightBlue);
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 0.5rem;
+  width: 90%;
+  letter-spacing: 1px;
+  opacity: 60%;
+  @include respond-to("m") {
+    font-size: 20px;
+    width: 100%;
+    margin-bottom: 1em;
+    text-align: start;
+    padding-left: 20px;
+  }
+}

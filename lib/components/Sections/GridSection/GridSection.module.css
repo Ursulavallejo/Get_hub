@@ -1,0 +1,128 @@
+.container {
+  box-sizing: border-box;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--getItBlue-2);
+  padding: 60px 24px;
+  width: 100%;
+}
+.container .wrapper {
+  display: flex;
+  max-width: 1600px;
+  margin: auto;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (min-width: 1024px) {
+  .container .wrapper {
+    margin: 40px auto;
+    flex-direction: row;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 80px 40px;
+  }
+}
+@media (min-width: 1336px) {
+  .container {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+.header {
+  text-align: center;
+  margin: 0 0.2em;
+}
+.header h2 {
+  padding: 1em 0;
+  text-align: left;
+  margin: 35px;
+}
+.header p {
+  padding-bottom: 1.5em;
+  padding-right: 1rem;
+  text-align: left;
+  margin-left: 35px;
+}
+@media (min-width: 1024px) {
+  .header {
+    text-align: left;
+  }
+}
+
+.item {
+  width: max(250px, 80%);
+  height: max(250px, 80%);
+  margin: 35px;
+  padding: 25px;
+  background-color: var(--background-color);
+  border-radius: 10px;
+}
+@media (min-width: 768px) {
+  .item {
+    gap: 12px;
+  }
+}
+.item p {
+  font-size: 16px;
+}
+.item h4 {
+  color: var(--primary-text);
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+@media (min-width: 1024px) {
+  .item {
+    margin: 18px;
+    padding: 1.5em;
+  }
+}
+
+.iconContainer {
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 18px;
+}
+
+.gridContainer {
+  display: block;
+  max-width: 850px;
+}
+@media (min-width: 768px) {
+  .gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 1em;
+    margin-bottom: 2rem;
+  }
+}
+@media (min-width: 1024px) {
+  .gridContainer {
+    margin-bottom: 2.5rem;
+  }
+}
+@media (min-width: 1336px) {
+  .gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding-left: 3em;
+  }
+}/*# sourceMappingURL=GridSection.module.css.map */

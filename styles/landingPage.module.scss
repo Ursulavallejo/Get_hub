@@ -1,0 +1,124 @@
+@import "../styles/breakpoints.scss";
+
+.container {
+        padding-top: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 1600px;
+
+    @include respond-to("m") {
+        padding-top: 250px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom: 6rem;
+    }
+    @include respond-to("l"){
+        padding-top: 260px;
+    }
+  
+}
+
+.textWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    margin-left: 1rem;
+
+    @include respond-to("m") {
+        width: 70%;
+        text-align: left;
+        align-items: flex-start;
+        margin-left: 3rem;
+        justify-content: space-evenly;
+    }
+
+    @include respond-to("l") {
+        margin-left: 7.5rem;
+        width: 90%;
+    }
+
+}
+
+
+.header {
+    margin-bottom: 50px;
+    width: 300px;
+    text-align: center;
+
+    @include respond-to("s") {
+        width: 100%;
+        margin-bottom: 20px;
+        font-size: 45px;
+    }
+
+    @include respond-to("m") {
+        width:80%;
+        font-size:60px;
+        text-align: left;
+        margin-left: 1.5rem;
+    }
+    @include respond-to("l") {
+        font-size: 70px;
+        width: 80%;
+
+    }
+}
+
+.text {
+    width: 80%;
+    margin-bottom: 50px;
+    text-align: left;
+    margin-top: 3rem;
+
+    @include respond-to("s") {
+        width: 90%;
+        margin-left: 1em;
+    }
+    @include respond-to("m") {
+        width: 80%;
+
+    }
+
+}
+.img {
+    border-radius: 20px;
+}
+
+.imgContainer {
+    visibility: hidden;
+    width: 0;
+
+    @include respond-to("m") {
+        width: 50%;
+        visibility: visible;
+        margin-right: -5rem;
+    }
+    @include respond-to("l") {
+        width: Max(250px, 80%);
+        margin-right: -25rem;
+    }
+}
+
+.imageWrapper {
+    width: 80%;
+    margin: 0 1rem;
+    @include respond-to("m") {
+        width: 0%;
+        visibility: hidden;
+    }
+    
+}
+
+
+
+.image
+ {
+    border-radius: 20px;
+}

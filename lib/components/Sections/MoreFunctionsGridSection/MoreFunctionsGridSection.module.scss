@@ -1,0 +1,118 @@
+@import "../../../../styles/breakpoints.scss";
+
+.container{
+  box-sizing: border-box;
+  margin: 0;
+  padding-bottom: 1.5em;
+
+  .wrapper{
+    max-width: 1600px;
+    margin: auto;
+    height: auto;
+  }
+  @include respond-to("m"){
+    padding-bottom: 2em;
+  }
+  @include respond-to("l"){
+    padding-bottom: 3em;
+  }
+
+}
+
+.gridContainer{
+  display: block;
+  max-width: 600px;
+  margin-top: 40px;
+  height: 100%;
+
+
+  @include respond-to("s") {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 0 1em;
+    margin-bottom: 2rem;
+    height: 100%;
+    max-width: 850px;
+
+  }
+  @include respond-to("m"){
+    margin-bottom: 2.5rem;
+    column-gap: 2em;
+    max-width: 100%;
+  }
+
+  @include respond-to("l"){
+    padding-left: 2em;
+    column-gap: 5em;
+
+  }
+}
+.header {
+  text-align: left;
+  margin: 0 .4em;
+
+  @include respond-to("s"){
+    padding-top: 0.5em;
+    padding-left: 1em;
+  }
+  @include respond-to("l"){
+    padding-left: 0.5em;
+    max-width: 50%;
+
+  }
+
+}
+
+.item {
+  width: Max(250px, 80%);
+  height: Max(250px, 65%);
+  margin: 35px;
+  padding: 25px;
+  background-color: var(--background-color);
+  border-radius: 10px;
+  height: 35vh;
+
+
+  p {
+    padding-top: 1em;
+    margin-left: 5.5em;
+  }
+
+  @include respond-to("s") {
+    gap: 12px;
+    height: Max(250px, 80%);
+  }
+
+  p {
+    font-size: 16px;
+  }
+  h4 {
+    color: var(--primary-text);
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 6px;
+  }
+
+  @include respond-to("m") {
+    padding: 1.5em;
+    width: 80%;
+    height: Max(250px, 70%)
+  }
+  @include respond-to("l") {
+    margin-bottom: 5em;
+    height: Max(180px, 30%);
+    width: Max(250px, 100%);
+
+  }
+}
+
+.iconContainer{
+  display: inline-flex;
+
+  h4{
+    margin-top: 0.5em;
+    padding-left: 2em;
+  }
+
+}

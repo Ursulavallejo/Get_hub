@@ -1,0 +1,93 @@
+@import "./breakpoints.scss";
+
+/*General Layout Font and color*/
+
+/*
+getItBlue3 =Backgrounds, text , buttons = --background-color
+getItBlue2 / getItBlue1 / LightBlue = Backgrounds, graphics
+getHubLime = Graphics, buttons, logo
+ */
+:root {
+  --background: #112231;
+  --background-color: #1a344b;
+  --primary-text: #ffffff;
+  --secondary-text: #000000;
+  --getHubLime: #96d723;
+  --getItBlue-1: #51718d;
+  --getItBlue-2: #384f63;
+  --lightBlue: #d7dce0;
+
+  --Small-graph-Orange: #fca120;
+  --Small-graph-Purple: #d161eb;
+  --Small-graph-Yellow: #f8e500;
+  --Small-graph-Turquoise: #23add7;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("./assets/fonts/Poppins-Bold.ttf");
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body,
+html {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--background);
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.layout {
+  width: 100%;
+}
+
+h1 {
+  font-size: clamp(30px, 5vw, 70px);
+}
+
+h2 {
+  font-size: clamp(30px, 5vw, 50px);
+}
+
+h1,
+h2 {
+  font-family: "Poppins-bold";
+  color: var(--primary-text);
+}
+
+// contact Title
+h4 {
+  font-size: clamp(30px, 5vw, 40px);
+  color: var(--background-color);
+}
+
+p {
+  font-size: 20px;
+  color: var(--primary-text);
+}
+
+.buttonStyle {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  background-color: var(--getHubLime);
+  padding: 5px 15px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 1em;
+}
+
+.buttonStyle:hover {
+  color: var(--primary-text);
+  transition: all 0.2s ease-in;
+}

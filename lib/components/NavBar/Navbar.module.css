@@ -1,0 +1,140 @@
+.container {
+  box-sizing: border-box;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2.6rem;
+  padding-right: 2.6rem;
+  padding-top: 0;
+  overflow-x: hidden;
+  background: transparent;
+  position: relative;
+  z-index: 20;
+}
+@media (min-width: 768px) {
+  .container {
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    padding-right: 8rem;
+    padding-left: 8rem;
+  }
+}
+@media (min-width: 1336px) {
+  .container {
+    align-items: center;
+    padding-right: 10rem;
+    padding-left: 10rem;
+  }
+}
+
+.imgContainer {
+  width: 7rem;
+  height: auto;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .imgContainer {
+    width: 8.5rem;
+  }
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+}
+
+.button {
+  width: 110px;
+  height: 35px;
+  border-radius: 30px;
+  font-family: "Poppins";
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--secondary-text);
+  background-color: var(--getHubLime);
+  cursor: pointer;
+}
+@media (min-width: 1024px) {
+  .button {
+    font-size: 20px;
+  }
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background: transparent;
+}
+
+.linkItem {
+  visibility: hidden;
+}
+@media (min-width: 768px) {
+  .linkItem {
+    visibility: visible;
+    font-family: "Poppins";
+    color: var(--primary-text);
+    font-size: 18px;
+    width: 6rem;
+    cursor: pointer;
+  }
+}
+@media (min-width: 1024px) {
+  .linkItem {
+    font-size: 20px;
+    width: 8rem;
+  }
+}
+
+.linkItem a:hover {
+  color: var(--getHubLime);
+  transition: all 0.2s ease-in;
+}
+
+.button a:hover {
+  color: var(--primary-text);
+  transition: all 0.2s ease-in;
+}
+
+.button a:focus {
+  color: var(--primary-text);
+  transition: all 0.2s ease-in;
+}
+
+.language {
+  color: white;
+  position: absolute;
+  font-size: 14px;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+.language a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.language a:hover {
+  color: var(--getHubLime);
+  transition: all 0.2s ease-in;
+}
+
+.icon {
+  size: 600px;
+}/*# sourceMappingURL=Navbar.module.css.map */
