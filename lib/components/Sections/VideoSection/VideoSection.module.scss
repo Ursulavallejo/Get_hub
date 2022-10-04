@@ -10,15 +10,15 @@
   .content  {
     display: flex;
     position: absolute;
-    height: 50vw;
-    width: 50vw;
+    height: 40vw;
+    width: 100vw;
     z-index: 1;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 1em;
+    padding: 13em 1.5em 0 1.5em;
     h2 {
-      text-align: center;
+      text-align: left;
       padding-bottom: 0.5em;
     }
     p {
@@ -26,43 +26,51 @@
     }
 
     @include respond-to("s"){
-      padding-top: 20em;
-      padding-left: 2.5em;
+      padding-top: 28em;
+      padding-left: 2.7em;
       width: 60vw;
       h2{
         text-align: left;
       }
     }
     @include respond-to("m") {
-      width: 60%;
-      height: 20%;
-      padding-left: 2.5em;
-      padding-top: -50em;
+      padding-top: 24em;
+      width: 55%;
+      height:20%;
+      padding-left: 2.8em;
+
       h2{
         text-align: left;
       }
     }
     @include respond-to("l"){
-    padding-top: 30em;
-      width: 55%;
-      height: 50%;
+      padding-top: 35em;
+      width: 50%;
+      padding-left: 7em;
     }
   }
 
   .imgWrapper {
-    height: 100vw;
+    height: 110vw;
     width: 100vw;
     position: relative;
 
+    @include respond-to("s"){
+      height: 90vw;
+    }
     @include respond-to("m") {
-      height: 80vh;
+      height: 100vh;
       width: 100%;
+    }
+
+    @include respond-to("l") {
+      height: 90vh;
     }
     .video {
       object-fit: cover;
       object-position: center;
       width: 100%;
-      height: 100%;
+      height: 104%;
     }
     .img {
       position: absolute;
@@ -78,12 +86,16 @@
     font-family: "Poppins", sans-serif;
     font-size: 20px;
     background-color: var(--getHubLime);
+    color:var(--background) ;
     padding: 5px 15px;
     border-radius: 20px;
     border: none;
     cursor: pointer;
     margin-top: 1em;
-   
+    @include respond-to("s"){
+      margin-top: 2.5em;
+    }
+
 
   }
 }
@@ -111,15 +123,31 @@
 }*/
 
 .iframeWrapper {
-  width: 620px;
-  height: 52vh;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 104%;
   position: absolute;
-  top: 20%;
-  left: 50%;
-  margin-left: -310px;
   z-index: 100;
   background-color: black;
-  padding: 40px;
+  padding: 25px;
+
+  @include respond-to("s"){
+    padding: 39px;
+  }
+  @include respond-to("m"){
+    width: 45vw;
+    height: 70vh;
+    top: 20%;
+    left: 50%;
+    margin-left: -310px;
+  }
+  @include respond-to("l"){
+    top: 18%;
+    margin-left: -390px;
+    padding: 45px;
+  }
+
 }
 
 
