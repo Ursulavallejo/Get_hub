@@ -134,6 +134,7 @@
 
   @include respond-to("s"){
     padding: 39px;
+    margin-top: -1px;
   }
   @include respond-to("m"){
     width: 45vw;
