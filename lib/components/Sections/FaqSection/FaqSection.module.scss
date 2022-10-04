@@ -8,14 +8,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 60px 0px 100px 0px;
+  padding: 60px 0.5em 100px 0.5em;
   position: relative;
 
   @include respond-to("s") {
     background: transparent;
     padding: 6.7em 1.5em;
   }
- 
+
 
   @include respond-to("m") {
     flex-direction: row;
@@ -39,32 +39,33 @@
   background-color: transparent;
   z-index: 2;
 
-
-
   @include respond-to("m") {
     width: 30%;
     margin: 0 20px;
-  
   }
-  
+  @include respond-to("l") {
+    width: 35%;
+    margin: 5px 20px;
+  }
+
 }
 
 .logo {
-    width:720px;
-    height: 865px;
-    position: absolute;
-    top: 7%;
-    left: -4%;
-    background: url('../../../../styles/assets/images/bg-faq.png');
-    background-position: 0%;
-    background-repeat: no-repeat;
-    background-size: 74%;
-    z-index: 1;
-    opacity: 0.5;
-    overflow: hidden;
-    padding: 0;
-    z-index: -100;
-  
+  width:720px;
+  height: 865px;
+  position: absolute;
+  top: 7%;
+  left: -4%;
+  background: url('../../../../styles/assets/images/bg-faq.png');
+  background-position: 0%;
+  background-repeat: no-repeat;
+  background-size: 74%;
+  z-index: 1;
+  opacity: 0.5;
+  overflow: hidden;
+  padding: 0;
+  z-index: -100;
+
   @include respond-to("l") {
     width:720px;
     height: 855px;
@@ -90,7 +91,7 @@
 .header {
   font-family: "Poppins-bold";
   color: var(--primary-text);
-  font-size: 42px;
+  font-size: 30px;
   width: 100%;
   margin-bottom: 70px;
   display: flex;
@@ -100,9 +101,9 @@
 
 
   @include respond-to("s") {
+    font-size: 42px;
     width: 90%;
     text-align: left;
-
 
   }
 
@@ -119,6 +120,7 @@
 
   @include respond-to("l") {
     width: 25%;
+    font-size: 50px;
   }
 }
 
@@ -180,7 +182,6 @@
   align-items: flex-start;
   margin-top: 30px;
   cursor: pointer;
-  width: 100%;
   padding-left: 12px;
 
   p {
@@ -197,12 +198,19 @@
     width: 100%;
     font-size: 30px;
     justify-content: space-between;
-    align-items: flex-start; 
+    align-items: flex-start;
 
     p {
       width: 90%;
       padding-bottom: 1rem;
     }
+  }
+  @include respond-to("l"){
+    p {
+      width: 100%;
+      padding-bottom: 1rem;
+    }
+
   }
 }
 
@@ -228,9 +236,9 @@
     rotate: 180deg;
   }
 }
-
 .answer {
-  padding-bottom: 2rem;
+  padding-left: 1em;
+  padding-bottom: 1rem;
   display: block;
   width: 100%;
   max-width: 600px;
