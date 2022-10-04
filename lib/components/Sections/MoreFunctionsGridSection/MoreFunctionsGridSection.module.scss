@@ -94,12 +94,10 @@
     }
   }
 
-
-
   @include respond-to("m") {
     padding: 1.5em;
-    width: 80%;
-    height: Max(250px, 70%)
+    width: 90%;
+    height: Max(200px, 70%)
   }
   @include respond-to("l") {
     margin-bottom: 5em;
