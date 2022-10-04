@@ -66,33 +66,35 @@
 
 .item {
   width: Max(250px, 80%);
-  height: Max(250px, 65%);
+  height: 320px;
   margin: 35px;
   padding: 25px;
   background-color: var(--background-color);
   border-radius: 10px;
-  height: 35vh;
-
 
   p {
-    padding-top: 1em;
-    margin-left: 5.5em;
-  }
-
-  @include respond-to("s") {
-    gap: 12px;
-    height: Max(250px, 80%);
-  }
-
-  p {
+    padding-top: 0.5em;
+    margin-left: 4.5em;
     font-size: 16px;
   }
+
   h4 {
     color: var(--primary-text);
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 6px;
   }
+
+  @include respond-to("s") {
+    gap: 12px;
+    width: Max(250px, 80%);
+    height: Max(250px, 80%);
+    p {
+      padding-top: 1em;
+    }
+  }
+
+
 
   @include respond-to("m") {
     padding: 1.5em;
