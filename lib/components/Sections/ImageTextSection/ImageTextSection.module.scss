@@ -19,6 +19,7 @@
   }
 
   .wrapper {
+
     display: flex;
     flex-direction: column;
     max-width: 1600px;
@@ -89,6 +90,7 @@
   }
   li {
     color: var(--getHubLime);
+
   }
 }
 .greendot {
@@ -101,6 +103,7 @@
   width: 30px;
   height: 30px;
   min-width: 30px;
+
 }
 
 .ulWrapper {
