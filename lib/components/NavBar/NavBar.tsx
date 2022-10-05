@@ -95,15 +95,21 @@ const Navbar = () => {
             {router.locale == 'sv' ? 'Kontakt' : 'Contact'}
           </Link>
         </div>
-        <div className={styles.language}>
+        <div >
         {/* <LocaleLinkWrapper> */}
+
+       <Link2
+        href={router.asPath}
+        locale={router.locale == 'sv' ? 'en' : 'sv'} >
+        <div className={styles.language}>
+        {router.locale == 'sv' ? 'English' : 'Svenska'}
+         <MdOutlineLanguage size={18} />
+         </div>
+         </Link2>
+
+{/*      This work only for the first page to translate. Left on the repo as reference same as the LocaleLinkWrapper
+
           <Link
-           // href={""}
-            to=""
-            spy={true}
-            smooth="true"
-            offset={-50}
-            duration={500}
             onClick={() => {
               router.push('', '', {
                 locale: router.locale == 'sv' ? 'en' : 'sv',
@@ -112,7 +118,7 @@ const Navbar = () => {
           >
             {router.locale == 'sv' ? 'English' : 'Svenska'}
             <MdOutlineLanguage size={18} />
-          </Link>
+          </Link> */}
         {/*   </LocaleLinkWrapper> */}
         </div>
       </nav>
