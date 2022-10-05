@@ -23,10 +23,10 @@ export const PricingSection = ({ id }: Props) => {
         <div className={styles.item}>
           <h4 className={styles.itemTitle}> {item.title}</h4>
           <h2 className={styles.itemPrice}> {item.price}</h2>
-          <p className={styles.itemDescription}>
+          <div className={styles.itemDescription}>
             {item.description?.json &&
               documentToReactComponents(item.description.json)}
-          </p>
+          </div>
         </div>
       </div>
     );
