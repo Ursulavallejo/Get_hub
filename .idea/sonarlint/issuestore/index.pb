@@ -29,23 +29,7 @@ i
 9lib/components/Sections/PricingSection/PricingSection.tsx,a\e\ae256590aac0ba9b4ef763b43b4d45e8db6d44e3
 q
 Alib/components/Sections/ContactSection/ContactSection.module.scss,b\1\b1a0a536e5079cb2c77b2e6e61d3ddbad10e39bc
-P
- lib/components/NavBar/NavBar.tsx,5\1\5169ba9aeed07297f60a5e9e975c0cfa21e6bad0
-9
-	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
 N
 styles/landingPage.module.scss,7\6\7611f2bdecab9d2a28d8ed7c574ad10f1a9f57ab
 n
 >lib/components/Sections/CheckListSection/CheckList.module.scss,3\f\3fe10b7c28c466bd1a5e23567d7707a0ee3c03c4
-@
-pages/[slug].tsx,8\8\88096f4b7b8644123727f1ea3ba60c50adc05d0f
-}
-Mlib/components/Sections/MoreInfoImageSection/MoreInfoImageSection.module.scss,f\7\f79f6c0a6957cdf040f0ad8dd053a3b4a7403886
-G
-styles/breakpoints.scss,b\b\bb5091fb050dea11b8c2677d6a2668acbef5d658
-m
-=lib/components/Sections/VideoSection/VideoSection.module.scss,b\6\b6b72db664564c60197368e08dbd5ea5dcf8c50d
-…
-Ulib/components/Sections/MoreFunctionsGridSection/MoreFunctionsGridSection.module.scss,c\7\c7257220350ff8e09b920f8c16d193383b054f2a
-X
-(lib/components/NavBar/Navbar.module.scss,e\e\ee4b9ffca650b3440d1992a583c8e7b1b332d51a

@@ -51,9 +51,11 @@
       padding-left: 7em;
     }
     @include respond-to("xl"){
-      padding-top: 45em;
+      padding-top: 52em;
       padding-left: 8em;
-      width: 60%;
+      width: 55%;
+      max-width: 2900px;
+
     }
   }
 
@@ -74,7 +76,7 @@
       height: 90vh;
     }
     @include respond-to("xl") {
-      height: 60vh;
+      height: 70vh;
     }
     .video {
       object-fit: cover;
@@ -108,8 +110,11 @@
     @include respond-to("s"){
       margin-top: 2.5em;
     }
-
-
+    @include respond-to("xl"){
+      margin-top: 3.5em;
+      padding: 10px 15px;
+      font-size: 22px;
+    }
   }
 }
 
@@ -157,9 +162,16 @@
     margin-left: -310px;
   }
   @include respond-to("l"){
-    top: 18%;
+    top: 10%;
     margin-left: -390px;
     padding: 45px;
+  }
+  @include respond-to("xl"){
+    top: 18%;
+    margin-left: -470px;
+    padding: 40px;
+    width: 55vw;
+    height: 50vh;
   }
 
 }
