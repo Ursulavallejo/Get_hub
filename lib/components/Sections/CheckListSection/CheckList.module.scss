@@ -15,7 +15,10 @@
     padding: 50px  45px;
   }
   @include respond-to("l") {
-    padding: 50px  24px;
+    padding: 2em  24px;
+  }
+  @include respond-to("xl") {
+    padding: 3em  4.5em;
   }
 
 }
@@ -42,12 +45,13 @@
     padding-bottom: 5.5rem;
   }
   @include respond-to("l"){
-    padding-top: 5.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 7.2rem;
   }
 
   @include respond-to("xl"){
     padding-top: 0.5rem;
-    padding-bottom: 7.5rem;
+    padding-bottom: 6.2rem;
     max-width: 2900px;
   }
 
