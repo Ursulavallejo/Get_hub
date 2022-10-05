@@ -28,11 +28,12 @@
       flex-direction: row;
     }
     @include respond-to("l") {
-      margin: 1em auto 0 1em;
+      margin: 2.5em 3em 0 2.5em;
       flex-direction: row;
     }
     @include respond-to("xl") {
       max-width: 2900px;
+
     }
   }
 }
@@ -54,9 +55,9 @@
   }
 
   @include respond-to("l") {
-    width: 60%;
-    margin-left: 4em;
-    margin-bottom: -5.5em;
+    width:60%;
+    margin-left: 5em;
+    margin-bottom: -1.75em;
   }
   @include respond-to("xl") {
     width: 67%;
@@ -106,8 +107,9 @@
     color: var(--getHubLime);
   }
   @include respond-to("l"){
-    width: 90%;
-    margin-left: 7em;
+    width: 70%;
+    margin-left:9em;
+    padding-left: 3.5em;
     padding-top: 3em;
     h1{
       font-size: 50px;

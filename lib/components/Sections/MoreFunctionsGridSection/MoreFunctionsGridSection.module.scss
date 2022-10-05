@@ -39,8 +39,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr ;
     grid-template-rows: 1fr 1fr 1fr;
-    padding: 0 1em;
-    margin-bottom: 2rem;
+    padding: 1.5em 1em;
     height: 100%;
     max-width: 850px;
 
@@ -67,7 +66,7 @@
   margin: 0 .4em;
 
   @include respond-to("s"){
-    padding-top: 0.5em;
+    padding-top: 0.7em;
     padding-left: 1em;
   }
   @include respond-to("l"){
