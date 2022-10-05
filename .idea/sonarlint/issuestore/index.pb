@@ -15,3 +15,19 @@ N
 lib/models/SEOMetadataModel.ts,2\7\271331190a7b80043ca3edf758df7d53dd24e2ec
 _
 /lib/components/hooks/useWndowSizeBreakpoint.tsx,d\b\dbd8106bd5a84bc5b8d5b108f5b793369c3d093b
+K
+lib/utils/sectionPicker.tsx,c\f\cfd5e23759086e2b8a295e2a5081a30239a73948
+@
+lib/api/pages.ts,c\c\ccc3531518382ff5e2c1593bffcb58f35bee46a9
+G
+lib/api/apolloClient.ts,6\a\6a310a8176e655846dea06d428e27f3fdd0bedf8
+H
+lib/api/fragments/SEO.ts,7\e\7ec47eeaef82f0b8a4f6e7f10ab062b459b0a75a
+?
+pages/index.tsx,b\3\b3357635c26d1b52053382ce7e8a8640d31fedc8
+I
+lib/components/myHead.tsx,b\8\b8e5fe32c31c008227472f1c57bead5f0ec4ba07
+q
+Alib/components/Sections/PricingSection/PricingSection.module.scss,e\7\e74d35f719dedb70260ccef167e619d61d4abddf
+i
+9lib/components/Sections/PricingSection/PricingSection.tsx,a\e\ae256590aac0ba9b4ef763b43b4d45e8db6d44e3

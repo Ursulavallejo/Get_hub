@@ -95,13 +95,13 @@ const Navbar = () => {
             {router.locale == 'sv' ? 'Kontakt' : 'Contact'}
           </Link>
         </div>
-        <div >
+        <div className={styles.languageContainer} >
         {/* <LocaleLinkWrapper> */}
 
        <Link2
         href={router.asPath}
         locale={router.locale == 'sv' ? 'en' : 'sv'} >
-        <div className={styles.language}>
+        <div className={styles.languageItem}>
         {router.locale == 'sv' ? 'English' : 'Svenska'}
          <MdOutlineLanguage size={18} />
          </div>
