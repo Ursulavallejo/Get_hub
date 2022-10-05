@@ -5,8 +5,6 @@ m
 =lib/components/Sections/VideoSection/VideoSection.module.scss,b\6\b6b72db664564c60197368e08dbd5ea5dcf8c50d
 i
 9lib/components/Sections/FaqSection/FaqSection.module.scss,0\7\0716f477c924b133d81b0a67140a6dce89101b2d
-…
-Ulib/components/Sections/MoreFunctionsGridSection/MoreFunctionsGridSection.module.scss,c\7\c7257220350ff8e09b920f8c16d193383b054f2a
 u
 Elib/components/Sections/ImageTextSection/ImageTextSection.module.scss,e\b\ebff5cb0791abdeb3de27a9b61b80fe8681433c3
 C

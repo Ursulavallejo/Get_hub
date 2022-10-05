@@ -2,7 +2,9 @@ $breakpoints: (
   "s": 768px,
   "m": 1024px,
   "l": 1336px,
-  "xl": 1639px,
+  "xl": 1793px,
+
+/*  "xl": 1639px,*/
 ) !default;
 
 @mixin respond-to($breakpoint) {
