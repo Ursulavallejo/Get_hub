@@ -31,3 +31,11 @@ q
 Alib/components/Sections/PricingSection/PricingSection.module.scss,e\7\e74d35f719dedb70260ccef167e619d61d4abddf
 i
 9lib/components/Sections/PricingSection/PricingSection.tsx,a\e\ae256590aac0ba9b4ef763b43b4d45e8db6d44e3
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+q
+Alib/components/Sections/ContactSection/ContactSection.module.scss,b\1\b1a0a536e5079cb2c77b2e6e61d3ddbad10e39bc
+X
+(lib/components/NavBar/Navbar.module.scss,e\e\ee4b9ffca650b3440d1992a583c8e7b1b332d51a
+P
+ lib/components/NavBar/NavBar.tsx,5\1\5169ba9aeed07297f60a5e9e975c0cfa21e6bad0
