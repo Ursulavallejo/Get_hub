@@ -7,6 +7,9 @@
 
 I utvecklingen av projektet har vi använt nya verktyg som vi var tvungna att lära oss och implementera. Vi kommer att utforska lite nedan.
 
+- [WireFrames](https://xd.adobe.com/view/48935ae1-817e-41da-98ee-fc309c57a868-1dc0/screen/b2dc6744-2297-4621-bedf-50e433995c55/specs/)
+
+
 # Next.Js
 
 * SEO :
