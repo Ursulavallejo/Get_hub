@@ -34,6 +34,9 @@
     padding-right: 10rem;
     padding-left: 10rem;
   }
+  @include respond-to("xl"){
+    height: 17vh;
+  }
 }
 
 .imgContainer {
@@ -46,6 +49,10 @@
   @include respond-to("s") {
     margin-top: 0;
     width: 8.5rem;
+  }
+  @include respond-to("xl") {
+    margin-top: 1em;
+    width: 10.5rem;
   }
 }
 
@@ -78,6 +85,11 @@
   @include respond-to("m") {
     font-size: 20px;
   }
+  @include respond-to("xl") {
+    font-size: 22px;
+    width: 120px;
+
+  }
 }
 
 .img {
@@ -108,6 +120,10 @@
   @include respond-to("m") {
     font-size: 20px;
     width: 8rem;
+  }
+  @include respond-to("xl") {
+    font-size: 22px;
+    width: 10rem;
   }
 }
 
@@ -169,6 +185,9 @@
   cursor: pointer;
   @include respond-to("s"){
     top: 10px;
+  }
+  @include respond-to("xl"){
+    font-size: 16px
   }
   .languageItem {
     display: flex;
