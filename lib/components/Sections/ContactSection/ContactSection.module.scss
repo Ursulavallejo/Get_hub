@@ -43,11 +43,15 @@
   }
 
   h2 {
-    font-size: 42px;
-  }
-  h2 {
+    font-size: 30px;
+    @include respond-to("s") {
+      font-size: 42px;
+    }
     @include respond-to("m") {
-      font-size: 36px;
+      font-size: 46px;
+    }
+    @include respond-to("l") {
+      font-size: 50px;
     }
   }
 }
@@ -66,7 +70,9 @@
   align-items: flex-start;
   gap: 20px;
   margin-bottom: 20px;
-
+  @include respond-to("s"){
+    //font-size: 42px;
+  }
   @include respond-to("m") {
     font-size: 40px;
     gap: 10px;
@@ -77,9 +83,11 @@
 
 .styleContact {
   color: var(--background-color);
-  font-size: 30px;
+  font-size: 25px;
+  @include respond-to("s"){
+    font-size: 30px;
+  }
   @include respond-to("l") {
-    font-size: 26px;
     width: 100%;
     margin-bottom: 1em;
   }
