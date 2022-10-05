@@ -71,7 +71,7 @@
   }
   @include respond-to("l"){
     padding-left: 0.5em;
-    max-width: 50%;
+    max-width: 60%;
   }
   @include respond-to("xl"){
     padding-left: 1em;
