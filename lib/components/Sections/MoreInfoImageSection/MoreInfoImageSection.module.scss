@@ -31,6 +31,9 @@
       margin: 1em auto 0 1em;
       flex-direction: row;
     }
+    @include respond-to("xl") {
+      max-width: 2900px;
+    }
   }
 }
 
@@ -47,16 +50,18 @@
 
   @include respond-to("m") {
     width: 50%;
-    margin-bottom: -13em;
+    margin-bottom: -12.1em;
   }
 
   @include respond-to("l") {
-
     width: 60%;
     margin-left: 4em;
-    margin-bottom: -6.5em;
-
-
+    margin-bottom: -7.9em;
+  }
+  @include respond-to("xl") {
+    width: 67%;
+    margin-left: 6em;
+    margin-bottom: -0.04em;
   }
 }
 
@@ -68,8 +73,6 @@
   width: 90%;
   padding-left: 2em;
   padding-right: 1em;
-
-
 
   h2, p {
     text-align: left;
@@ -89,10 +92,10 @@
     h1{
       font-size: 40px;
     }
-    }
-    h2 {
-      text-align: left;
-      padding-bottom: 1em;
+  }
+  h2 {
+    text-align: left;
+    padding-bottom: 1em;
 
     p {
       text-align: left;
@@ -110,13 +113,22 @@
       font-size: 50px;
     }
   }
+  @include respond-to("xl"){
+    width: 80%;
+    margin-left: 9em;
+
+  }
 }
 
 .ulWrapper {
   display: flex;
   align-items: center;
   gap: 30px;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
+  @include respond-to("xl"){
+    gap: 15px;
+    margin-top: 1rem;
+  }
 }
 
 .ul{

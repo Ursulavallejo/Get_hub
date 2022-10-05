@@ -1,12 +1,12 @@
 @import "../styles/breakpoints.scss";
 
 .container {
-        padding-top: 200px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        max-width: 1600px;
+    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1600px;
 
     @include respond-to("m") {
         padding-top: 250px;
@@ -19,7 +19,11 @@
     @include respond-to("l"){
         padding-top: 260px;
     }
-  
+    @include respond-to("xl"){
+        padding-top: 300px;
+        max-width: 2900px;
+    }
+
 }
 
 .textWrapper {
@@ -42,6 +46,10 @@
     @include respond-to("l") {
         margin-left: 7.5rem;
         width: 90%;
+    }
+    @include respond-to("xl"){
+        margin-left: 8rem;
+
     }
 
 }
@@ -66,8 +74,9 @@
     }
     @include respond-to("l") {
         font-size: 70px;
-        width: 80%;
-
+    }
+    @include respond-to("xl") {
+        width: 50%;
     }
 }
 
@@ -83,7 +92,10 @@
     }
     @include respond-to("m") {
         width: 80%;
-
+    }
+    @include respond-to("xl"){
+        width: 85%;
+        margin-top: 2rem;
     }
 
 }
@@ -104,6 +116,10 @@
         width: Max(250px, 80%);
         margin-right: -25rem;
     }
+    @include respond-to("xl") {
+        width: Max(250px, 65%);
+        margin-right: -25rem;
+    }
 }
 
 .imageWrapper {
@@ -113,12 +129,10 @@
         width: 0%;
         visibility: hidden;
     }
-    
+
 }
 
-
-
 .image
- {
+{
     border-radius: 20px;
 }

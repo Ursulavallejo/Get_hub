@@ -16,7 +16,9 @@
   }
   @include respond-to("l") {
     padding: 50px  24px;
-  }}
+  }
+
+}
 
 .iconContainer {
   color: var(--getHubLime);
@@ -40,7 +42,13 @@
     padding-bottom: 5.5rem;
   }
   @include respond-to("l"){
-    padding-top: 4.5rem;
+    padding-top: 5.5rem;
+  }
+
+  @include respond-to("xl"){
+    padding-top: 0.5rem;
+    padding-bottom: 7.5rem;
+    max-width: 2900px;
   }
 
 }

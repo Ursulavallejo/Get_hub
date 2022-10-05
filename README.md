@@ -321,6 +321,28 @@ export const getHomePageQuery = (): DocumentNode => {
     }
   }
 }
+
+<SASS Breakpoints.scss>
+
+    $breakpoints: (
+    "s": 768px,
+    "m": 1024px,
+    "l": 1336px,
+    "xl": 1639px,
+    ) !default;
+
+    @mixin respond-to($breakpoint) {
+@if map-has-key($breakpoints, $breakpoint) {
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+    @content;
+}
+} @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+    + "Available breakpoints are: #{map-keys($breakpoints)}.";
+}
+}
+
+
 ```
 
 # Sendgrid
