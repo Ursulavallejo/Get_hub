@@ -37,10 +37,6 @@ m
 =lib/components/Sections/VideoSection/VideoSection.module.scss,b\6\b6b72db664564c60197368e08dbd5ea5dcf8c50d
 n
 >lib/components/Sections/CheckListSection/CheckList.module.scss,3\f\3fe10b7c28c466bd1a5e23567d7707a0ee3c03c4
-N
-styles/landingPage.module.scss,7\6\7611f2bdecab9d2a28d8ed7c574ad10f1a9f57ab
-@
-pages/[slug].tsx,8\8\88096f4b7b8644123727f1ea3ba60c50adc05d0f
 9
 	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
 P
