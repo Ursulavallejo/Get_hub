@@ -302,6 +302,14 @@ Contentful är plattformen där du kan uppdatera innehållet på din webbplats, 
 
 ```
 
+[<img src="./styles/assets/images/contenful1.png" width="200"/>](./styles/assets/images/contenful1.png)
+
+[<img src="./styles/assets/images/model.png" width="600"/>](./styles/assets/images/model.png)
+
+[<img src="./styles/assets/images/model2.png" width="600"/>](./styles/assets/images/model2.png)
+
+[<img src="./styles/assets/images/locales.png" width="600"/>](./styles/assets/images/locales.png)
+
 
 - [Contentful](https://www.contentful.com/)
 
@@ -488,11 +496,12 @@ SendGrid hanterar alla tekniska detaljer, från skalning av infrastrukturen till
     setCompany("");
 }
 };
-
 ```
+
 - [SENDGrid](https://sendgrid.com/)
 
 - [SENDGrid Implementation Tutorial](https://www.freecodecamp.org/news/how-to-build-a-working-contact-form-with-sendgrid-and-next-js/)
+
 
 # Azure Dev app
 
