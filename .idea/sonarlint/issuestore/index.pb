@@ -41,7 +41,5 @@ n
 	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
 P
  lib/components/NavBar/NavBar.tsx,5\1\5169ba9aeed07297f60a5e9e975c0cfa21e6bad0
-…
-Ulib/components/Sections/MoreFunctionsGridSection/MoreFunctionsGridSection.module.scss,c\7\c7257220350ff8e09b920f8c16d193383b054f2a
 }
 Mlib/components/Sections/MoreInfoImageSection/MoreInfoImageSection.module.scss,f\7\f79f6c0a6957cdf040f0ad8dd053a3b4a7403886
