@@ -29,8 +29,6 @@ G
 styles/breakpoints.scss,b\b\bb5091fb050dea11b8c2677d6a2668acbef5d658
 n
 >lib/components/Sections/CheckListSection/CheckList.module.scss,3\f\3fe10b7c28c466bd1a5e23567d7707a0ee3c03c4
-9
-	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
 P
  lib/components/NavBar/NavBar.tsx,5\1\5169ba9aeed07297f60a5e9e975c0cfa21e6bad0
 }
@@ -51,5 +49,3 @@ m
 =lib/components/Sections/VideoSection/VideoSection.module.scss,b\6\b6b72db664564c60197368e08dbd5ea5dcf8c50d
 i
 9lib/components/Sections/ContactSection/ContactSection.tsx,a\5\a53fc6e6ce4d934d6fa4af59a0ef8153e1ee6a3c
-q
-Alib/components/Sections/ContactSection/ContactSection.module.scss,b\1\b1a0a536e5079cb2c77b2e6e61d3ddbad10e39bc

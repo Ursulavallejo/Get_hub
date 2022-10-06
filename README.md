@@ -82,7 +82,9 @@ Det ger oss möjlighet att tillhandahålla SEO-datainformation för att bättre 
 
 * API: 
 
-API hanteras i samma mapp i projektet. Backend hanteras inom samma project, det finns inget behov av att generera en klient och en server.
+API hanteras i samma mapp i projektet. 
+
+Backend hanteras inom samma project, det finns inget behov av att generera en klient och en server side.
 
 ```javascript
 import {
@@ -125,7 +127,7 @@ export { client };
 ```
 
 * Router:  
-Sidorna som genereras i pages-mappen genererar sin rutt utan att behöva konfigurera dem.
+Sidorna som genereras i pages-mappen genererar sin router utan att behöva konfigurera dem.
 
 Det finns olika typer av sätt att använda routern:
 
@@ -133,7 +135,7 @@ Det finns olika typer av sätt att använda routern:
 - Nested Routes
 - Dynamic Rotes [slug]
 
-I vårt projekt implementerar vi den dynamiska router för landningssidan. Ruttens namn är hämtat från [slug] som tilldelats den i contentful. 
+I vårt projekt implementerar vi den dynamiska router för landningssidan. Router namn är hämtat från [slug] som tilldelats den i contentful. 
 Därför kan det variera utan att behöva gå in i programmering.
 
 [<img src="./styles/assets/images/next.png" width="300"/>](./styles/assets/images/next.png)
@@ -142,7 +144,8 @@ Därför kan det variera utan att behöva gå in i programmering.
 
 
 * Data Fetching från Contentful med GetServerSideProps:
-* Render Sections 
+
+- Render Sections 
 ```javascript
  <index.tsx>
 import type { GetServerSideProps } from "next";
@@ -291,8 +294,13 @@ export const getHomePageQuery = (): DocumentNode => {
 - 
 # Contentful
 
+
+
+
 # SAS
 
+
+[<img src="./styles/assets/images/SASS1.webp" width="700"/>](./styles/assets/images/SASS1.webp)
 ```javascript
 
 <SASS Css moduler>
