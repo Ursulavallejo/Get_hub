@@ -23,6 +23,11 @@
       margin: auto;
     }
 
+    @include respond-to("xl"){
+      width: 100%;
+      max-width: 1400px;
+    }
+
     .formGroup {
       @include respond-to("m") {
         width: 80%;
