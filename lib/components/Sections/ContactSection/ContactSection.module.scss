@@ -22,7 +22,6 @@
       max-width: 800px;
       margin: auto;
     }
-
     @include respond-to("xl"){
       width: 100%;
       max-width: 1400px;
@@ -147,4 +146,12 @@
     text-align: start;
     padding-left: 20px;
   }
+}
+
+.colorGreen {
+  color: var(--getHubLime);
+}
+
+.colorError {
+  color: rgba(119, 61, 59, 0.96);
 }

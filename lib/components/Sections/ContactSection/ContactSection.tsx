@@ -155,11 +155,11 @@ export const ContactSection = ({ id }: Props) => {
             </button>
             <div>
               {showSuccessMessage && (
-                <p>Thank you! Your Message has been delivered.</p>
+                <p className={styles.colorGreen}>Thank you! Your Message has been delivered.</p>
               )}
 
               {showFailureMessage && (
-                <p>Oops! Something went wrong, please try again.</p>
+                <p className={styles.colorError}>Oops! Something went wrong, please try again.</p>
               )}
             </div>
           </form>
