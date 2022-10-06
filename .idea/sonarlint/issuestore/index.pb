@@ -11,10 +11,6 @@ _
 /lib/components/hooks/useWndowSizeBreakpoint.tsx,d\b\dbd8106bd5a84bc5b8d5b108f5b793369c3d093b
 K
 lib/utils/sectionPicker.tsx,c\f\cfd5e23759086e2b8a295e2a5081a30239a73948
-@
-lib/api/pages.ts,c\c\ccc3531518382ff5e2c1593bffcb58f35bee46a9
-G
-lib/api/apolloClient.ts,6\a\6a310a8176e655846dea06d428e27f3fdd0bedf8
 H
 lib/api/fragments/SEO.ts,7\e\7ec47eeaef82f0b8a4f6e7f10ab062b459b0a75a
 ?

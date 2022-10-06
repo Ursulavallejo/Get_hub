@@ -290,8 +290,9 @@ export const getHomePageQuery = (): DocumentNode => {
   `;
 };
 ```
+
 - [Graphql](https://graphql.org/)
-- 
+
 # Contentful
 
 Contentful är ett huvudlöst innehållshanteringssystem. 
@@ -299,6 +300,11 @@ Contentful är ett huvudlöst innehållshanteringssystem.
 Contentful är plattformen där du kan uppdatera innehållet på din webbplats, en mobilapp eller någon annan plattform som visar innehåll
 
 ```javascript
+<env.local>
+    NEXT_PUBLIC_ENVIRONMENT=dev
+    
+    NEXT_PUBLIC_SPACE_ID=
+    NEXT_PUBLIC_CONTENT_DELIVERY_TOKEN=
 
 ```
 
@@ -309,6 +315,8 @@ Contentful är plattformen där du kan uppdatera innehållet på din webbplats, 
 [<img src="./styles/assets/images/model2.png" width="600"/>](./styles/assets/images/model2.png)
 
 [<img src="./styles/assets/images/locales.png" width="600"/>](./styles/assets/images/locales.png)
+
+[<img src="./styles/assets/images/content.png" width="600"/>](./styles/assets/images/content.png)
 
 
 - [Contentful](https://www.contentful.com/)
