@@ -47,5 +47,3 @@ i
 9lib/components/Sections/FaqSection/FaqSection.module.scss,0\7\0716f477c924b133d81b0a67140a6dce89101b2d
 m
 =lib/components/Sections/VideoSection/VideoSection.module.scss,b\6\b6b72db664564c60197368e08dbd5ea5dcf8c50d
-i
-9lib/components/Sections/ContactSection/ContactSection.tsx,a\5\a53fc6e6ce4d934d6fa4af59a0ef8153e1ee6a3c

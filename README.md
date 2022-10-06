@@ -294,13 +294,25 @@ export const getHomePageQuery = (): DocumentNode => {
 - 
 # Contentful
 
+Contentful är ett huvudlöst innehållshanteringssystem. 
+
+Contentful är plattformen där du kan uppdatera innehållet på din webbplats, en mobilapp eller någon annan plattform som visar innehåll
+
+```javascript
+
+```
 
 
+- [Contentful](https://www.contentful.com/)
 
-# SAS
+# SASS
+
+Sass står för Syntactically Awesome Stylesheet. Sass är ett tillägg till CSS. Sass är en CSS pre-processor. Sass är helt kompatibel med alla versioner av CSS. 
+Sass minskar upprepning av CSS och sparar därför tid.
 
 
 [<img src="./styles/assets/images/SASS1.webp" width="700"/>](./styles/assets/images/SASS1.webp)
+
 ```javascript
 
 <SASS Css moduler>
@@ -352,8 +364,132 @@ export const getHomePageQuery = (): DocumentNode => {
 
 
 ```
+- [SASS](https://sass-lang.com/)
 
 # Sendgrid
 
+SendGrid är en molnbaserad SMTP-leverantör som låter dig skicka e-post utan att behöva underhålla e-postservrar. 
 
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+SendGrid hanterar alla tekniska detaljer, från skalning av infrastrukturen till ISP-uppsökande och rykteövervakning till vitlistatjänster och realtidsanalys.
+
+
+```javascript
+<pages / sendgrid.js>
+
+    import sendgrid from "@sendgrid/mail";
+
+    async function sendEmail(req, res) {
+    try {
+    sendgrid.setApiKey(process.env.NEXT_PUBLIC_SENDGRID_API_KEY);
+    await sendgrid.send({
+    to: "Your email where you'll receive emails",
+    from: "your website email address here ",
+    subject: `GetHub EOI from salesite`,
+    html: `<h1>EOI från Gethub.se</h1>
+              <p><strong>Namn:</strong> ${req.body.fullName}</p>
+              <p><strong>Företag:</strong> ${req.body.company}</p>
+              <p><strong>Email:</strong> ${req.body.email}</p>
+`,
+});
+} catch (error) {
+    console.log(error.message);
+    return res.status(error.statusCode || 500).json({ error: error.message });
+}
+
+    return res.status(200).json({ error: "" });
+}
+
+    export default sendEmail;
+
+```
+
+```javascript
+<contact.tsx>
+
+    export const ContactSection = ({ id }: Props) => {
+    const { locale } = useRouter();
+
+    const { loading, data } = useQuery(getContactSectionQuery(id), {
+    variables: {
+    locale: locale,
+},
+});
+
+    const [fullName, setFullName] = useState("");
+    const [company, setCompany] = useState("");
+    const [email, setEmail] = useState("");
+
+    //   Form validation state
+
+    const [errors, setErrors] = useState<any>({});
+
+    // Setting success or failure messages states
+
+    const [showSuccessMessage, setShowSuccessMessage] = useState(false);
+    const [showFailureMessage, setShowFailureMessage] = useState(false);
+
+    if (loading) return <div></div>;
+    // Validation check method
+
+    const handleValidation = () => {
+    let tempErrors: any = {};
+    let isValid = true;
+
+    if (fullName.length <= 0) {
+    tempErrors["fullName"] = true;
+    isValid = false;
+}
+    if (email.length <= 0) {
+    tempErrors["email"] = true;
+    isValid = false;
+}
+    if (company.length <= 0) {
+    tempErrors["company"] = true;
+    isValid = false;
+}
+
+    setErrors({ ...tempErrors });
+    return isValid;
+};
+
+    //   Handling form submit
+
+    const handleSubmit = async (e: any) => {
+    e.preventDefault();
+
+    let isValidForm = handleValidation();
+
+    if (isValidForm) {
+    const res = await fetch("/api/sendgrid", {
+    body: JSON.stringify({
+    email: email,
+    fullName: fullName,
+    company: company,
+}),
+    headers: {
+    "Content-Type": "application/json",
+},
+    method: "POST",
+});
+
+    const { error } = await res.json();
+    if (error) {
+    setShowSuccessMessage(false);
+    setShowFailureMessage(true);
+
+    return;
+}
+
+    setShowSuccessMessage(true);
+    setShowFailureMessage(false);
+    // Reset form fields
+    setFullName("");
+    setEmail("");
+    setCompany("");
+}
+};
+
+```
+- [SENDGrid](https://sendgrid.com/)
+- 
+- [SENDGrid Implementation Tutorial](https://www.freecodecamp.org/news/how-to-build-a-working-contact-form-with-sendgrid-and-next-js/)
