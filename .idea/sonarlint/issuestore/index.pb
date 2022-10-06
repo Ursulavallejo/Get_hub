@@ -29,8 +29,6 @@ i
 9lib/components/Sections/PricingSection/PricingSection.tsx,a\e\ae256590aac0ba9b4ef763b43b4d45e8db6d44e3
 G
 styles/breakpoints.scss,b\b\bb5091fb050dea11b8c2677d6a2668acbef5d658
-X
-(lib/components/NavBar/Navbar.module.scss,e\e\ee4b9ffca650b3440d1992a583c8e7b1b332d51a
 m
 =lib/components/Sections/VideoSection/VideoSection.module.scss,b\6\b6b72db664564c60197368e08dbd5ea5dcf8c50d
 n
