@@ -1,6 +1,7 @@
 @import "../styles/breakpoints.scss";
 
 .container {
+    box-sizing: border-box;
     padding-top: 200px;
     display: flex;
     flex-direction: column;
@@ -20,6 +21,7 @@
     }
     @include respond-to("l"){
         padding-top: 260px;
+
     }
     @include respond-to("xl"){
         padding-top: 300px;
@@ -97,6 +99,10 @@
         width: 80%;
         margin-top: 0;
     }
+    @include respond-to("l") {
+        width: 72%;
+
+    }
     @include respond-to("xl"){
         width: 75%;
         margin-top: 2rem;
@@ -117,8 +123,8 @@
         margin-right: -5rem;
     }
     @include respond-to("l") {
-        width: Max(250px, 80%);
-        margin-right: -25rem;
+        width: Max(250px, 60%);
+        margin-right: -15rem;
     }
     @include respond-to("xl") {
         width: Max(250px, 65%);
@@ -127,7 +133,7 @@
 }
 
 .imageWrapper {
-    width: 80%;
+    width: 75%;
     margin: 0 1rem;
     @include respond-to("m") {
         width: 0%;
