@@ -491,5 +491,9 @@ SendGrid hanterar alla tekniska detaljer, från skalning av infrastrukturen till
 
 ```
 - [SENDGrid](https://sendgrid.com/)
-- 
+
 - [SENDGrid Implementation Tutorial](https://www.freecodecamp.org/news/how-to-build-a-working-contact-form-with-sendgrid-and-next-js/)
+
+# Azure Dev app
+
+[<img src="./styles/assets/images/azureDev.png" width="700"/>](./styles/assets/images/azureDev.png)
