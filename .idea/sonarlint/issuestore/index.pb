@@ -49,3 +49,14 @@ E
 pages/api/sendgrid.js,1\9\199bd86ed199b2a3a0c5ac39f646b418b0494e6e
 i
 9lib/components/Sections/ContactSection/ContactSection.tsx,a\5\a53fc6e6ce4d934d6fa4af59a0ef8153e1ee6a3c
+G
+lib/api/apolloClient.ts,6\a\6a310a8176e655846dea06d428e27f3fdd0bedf8
+@
+lib/api/pages.ts,c\c\ccc3531518382ff5e2c1593bffcb58f35bee46a9
+C
+lib/api/sections.ts,5\3\53005f6e71016aed83c6d80d9ed5d5ea20beaf3d
+:
+
+Dockerfile,6\6\6651ddff6eb82c840ced7c1dddee15c6e1913dd4
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
