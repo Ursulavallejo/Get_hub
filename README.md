@@ -141,6 +141,8 @@ Därför kan det variera utan att behöva gå in i programmering.
 [<img src="./styles/assets/images/next.png" width="300"/>](./styles/assets/images/next.png)
 
 - [Next Tutorial](https://www.youtube.com/watch?v=9P8mASSREYM&list=PLC3y8-rFHvwgC9mj0qv972IO5DmD-H0ZH&index=2)
+- [Next Tutorial Pedro Tech](https://youtu.be/tsmaQdgidKg)
+- [Next Tutorial Codevolution](https://youtu.be/9P8mASSREYM)
 
 
 * Data Fetching från Contentful med GetServerSideProps:
@@ -292,6 +294,7 @@ export const getHomePageQuery = (): DocumentNode => {
 ```
 
 - [Graphql](https://graphql.org/)
+- [Tutorial Laith Academy](https://youtu.be/gAbIQx26wSI)
 
 # Contentful
 
@@ -320,6 +323,7 @@ Contentful är plattformen där du kan uppdatera innehållet på din webbplats, 
 
 
 - [Contentful](https://www.contentful.com/)
+- [Tutorial React /Contentful](https://youtube.com/playlist?list=PL4cUxeGkcC9jClk8wl1yJcN3Zlrr8YSA1)
 
 # SASS
 
@@ -514,3 +518,5 @@ SendGrid hanterar alla tekniska detaljer, från skalning av infrastrukturen till
 # Azure Dev app
 
 [<img src="./styles/assets/images/azureDev.png" width="700"/>](./styles/assets/images/azureDev.png)
+
+https://triptale.net/functions/
