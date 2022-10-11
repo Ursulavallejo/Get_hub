@@ -14,6 +14,7 @@ type Props = {
 
 export const ImageTextSection = ({ id }: Props) => {
   const { locale } = useRouter();
+  const router = useRouter();
 
   const { loading, data } = useQuery(getImageTextSectionQuery(id), {
     variables: {
