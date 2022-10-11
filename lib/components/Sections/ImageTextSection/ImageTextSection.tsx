@@ -67,7 +67,8 @@ export const ImageTextSection = ({ id }: Props) => {
           {data.imageTextSection.buttonText && (
 
 
-          <Link href={ '/nyheter' }>
+          <Link href={router.locale == 'sv' ? '/nyheter' : '/news'}>
+
           <button className="buttonStyle">
               {data.imageTextSection.buttonText}
             </button>
