@@ -52,9 +52,9 @@ console.log('CHECKLIST', data)
 
     <section className={styles.container} id="case">
       <div className={styles.wrapper}>
-        <div className={styles.header}>
+ {/*         <div className={styles.header}>
           <h2>{data?.checkListSection.title}</h2>
-        </div>
+        </div> */}
 
          <div className={styles.itemContainer}>
           {data.checkListSection.itemsCollection.items.map(
