@@ -67,7 +67,7 @@ export const ImageTextSection = ({ id }: Props) => {
           {data.imageTextSection.buttonText && (
 
 
-          <Link href={ '/information' }>
+          <Link href={ '/nyheter' }>
           <button className="buttonStyle">
               {data.imageTextSection.buttonText}
             </button>
