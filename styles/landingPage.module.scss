@@ -20,12 +20,16 @@
         padding-bottom: 6rem;
     }
     @include respond-to("l"){
-        padding-top: 260px;
+        padding-top: 220px;
 
     }
     @include respond-to("xl"){
+        padding-top: 270px;
+        max-width: 2000px;
+    }
+    @include respond-to("xxl"){
         padding-top: 300px;
-        max-width: 2900px;
+        max-width: 2700px;
     }
 
 }
@@ -48,12 +52,11 @@
     }
 
     @include respond-to("l") {
-        margin-left: 7.5rem;
+        margin-left: 4rem;
         width: 90%;
     }
     @include respond-to("xl"){
-        margin-left: 8rem;
-
+        margin-left: 5rem;
     }
 
 }
@@ -75,14 +78,20 @@
         font-size:60px;
         text-align: left;
         margin-left: 1.5rem;
+        margin-top: 1em;
 
     }
     @include respond-to("l") {
         font-size: 70px;
     }
     @include respond-to("xl") {
+        width: 60%;
+    }
+
+    @include respond-to("xxl") {
         width: 50%;
     }
+
 }
 
 .text {
@@ -100,12 +109,16 @@
         margin-top: 0;
     }
     @include respond-to("l") {
-        width: 72%;
+        width: 74%;
 
     }
     @include respond-to("xl"){
         width: 75%;
-        margin-top: 2rem;
+        margin-top:0.5rem;
+    }
+    @include respond-to("xxl"){
+        width: 75%;
+        margin-top: 1.5rem;
     }
 
 }
@@ -120,15 +133,19 @@
     @include respond-to("m") {
         width: 50%;
         visibility: visible;
-        margin-right: -5rem;
+        margin-right: -4%;
     }
     @include respond-to("l") {
         width: Max(250px, 60%);
-        margin-right: -15rem;
+        margin-right:-11%;
     }
     @include respond-to("xl") {
         width: Max(250px, 65%);
-        margin-right: -4rem;
+        margin-right: -21%;
+    }
+    @include respond-to("xxl") {
+        width: Max(250px, 60%);
+        margin-right: -20%;
     }
 }
 

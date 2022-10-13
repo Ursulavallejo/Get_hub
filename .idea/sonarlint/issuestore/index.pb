@@ -9,8 +9,6 @@ H
 lib/api/fragments/SEO.ts,7\e\7ec47eeaef82f0b8a4f6e7f10ab062b459b0a75a
 I
 lib/components/myHead.tsx,b\8\b8e5fe32c31c008227472f1c57bead5f0ec4ba07
-N
-styles/landingPage.module.scss,7\6\7611f2bdecab9d2a28d8ed7c574ad10f1a9f57ab
 E
 pages/api/sendgrid.js,1\9\199bd86ed199b2a3a0c5ac39f646b418b0494e6e
 G
