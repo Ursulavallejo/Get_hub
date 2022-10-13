@@ -25,6 +25,12 @@
     @include respond-to("m") {
       margin: 20px auto;
     }
+    @include respond-to("xl") {
+      max-width: 2000px;
+    }
+    @include respond-to("xxl") {
+      max-width: 2700px;
+    }
   }
 }
 
@@ -41,7 +47,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-  
+
   }
 }
 
@@ -77,21 +83,21 @@
 .itemTitle {
   color: var(--getHubLime);
   text-align: center;
- 
+
 }
 
 .itemPrice {
   text-align: center;
   font-size: 35px;
- 
+
 }
 
 .itemDescription {
   h4 {
     color: var(--primary-text);
     margin-bottom: 20px;
-  
-  
+
+
   }
   font-size: 35px;
   text-align: center;
@@ -99,14 +105,15 @@
   ul {
     list-style-type: none;
     margin-top: 40px;
-  
+
   }
 
   li {
     display: grid;
     grid-template-columns: 30px auto;
     justify-content: start;
-    margin-bottom: 7px;   
+    margin-bottom: 7px;
+
   }
 
   li::before {

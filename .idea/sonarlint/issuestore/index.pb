@@ -13,10 +13,6 @@ H
 pages/index.tsx,b\3\b3357635c26d1b52053382ce7e8a8640d31fedc8
 I
 lib/components/myHead.tsx,b\8\b8e5fe32c31c008227472f1c57bead5f0ec4ba07
-q
-Alib/components/Sections/PricingSection/PricingSection.module.scss,e\7\e74d35f719dedb70260ccef167e619d61d4abddf
-i
-9lib/components/Sections/PricingSection/PricingSection.tsx,a\e\ae256590aac0ba9b4ef763b43b4d45e8db6d44e3
 G
 styles/breakpoints.scss,b\b\bb5091fb050dea11b8c2677d6a2668acbef5d658
 @
