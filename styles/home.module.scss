@@ -11,12 +11,17 @@
   @include respond-to("l") {
     margin-top: 320px;
   }
- 
+  @include respond-to("xxl") {
+    margin-top: 460px;
+  }
 
   .wrapper {
-    max-width: 1400px;
+    max-width: 1600px;
     margin: auto;
-    
+    @include respond-to("xxl") {
+      max-width: 2500px;
+    }
+
   }
 }
 
@@ -69,6 +74,7 @@
     width: auto;
     padding-top: 80px;
   }
+
 }
 
 .introText {
@@ -110,6 +116,9 @@
     right: 0;
     margin: 0;
     width: 50%;
+  }
+  @include respond-to("xl") {
+    margin-bottom: 4.7rem;
   }
 }
 
