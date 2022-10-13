@@ -29,8 +29,6 @@ G
 Ulib/components/Sections/MoreFunctionsGridSection/MoreFunctionsGridSection.module.scss,c\7\c7257220350ff8e09b920f8c16d193383b054f2a
 N
 styles/landingPage.module.scss,7\6\7611f2bdecab9d2a28d8ed7c574ad10f1a9f57ab
-i
-9lib/components/Sections/FaqSection/FaqSection.module.scss,0\7\0716f477c924b133d81b0a67140a6dce89101b2d
 m
 =lib/components/Sections/VideoSection/VideoSection.module.scss,b\6\b6b72db664564c60197368e08dbd5ea5dcf8c50d
 E

@@ -10,7 +10,7 @@
   align-items: center;
   padding: 60px 0.5em 100px 0.5em;
   position: relative;
-  max-width: 2900px;
+  max-width: 1600px;
 
   @include respond-to("s") {
     background: transparent;
@@ -22,17 +22,20 @@
     flex-direction: row;
     align-items: flex-start;
     margin: 40px 0px;
-    //padding: 60px 80px 100px 80px;
-
   }
 
   @include respond-to("l") {
     margin: 40px 0px;
+
   }
 
   @include respond-to("xl") {
-    margin: 60px 0px;
-
+    margin: 60px auto;
+    max-width: 2000px;
+  }
+  @include respond-to("xxl") {
+    max-width: 2700px;
+    margin: 60px 13%;
   }
 }
 
@@ -81,7 +84,7 @@
     height: 855px;
     position: absolute;
     top: 5%;
-    left: -4%;
+    left: -5%;
     background-position:80%;
     background-repeat: no-repeat;
     background-size: 88%;
@@ -95,6 +98,11 @@
     background-size: 85%;
     width:760px;
     height: 865px;
+  }
+  @include respond-to("xxl"){
+    background-position:90%;
+    width:800px;
+    height: 900px;
   }
 }
 
