@@ -6,32 +6,34 @@ import styles from "./GridCarousel.module.scss";
 import Image from "next/image";
 import { Splide, SplideSlide} from '@splidejs/react-splide'
 import '@splidejs/react-splide/css';
- 
+import Link from "next/link";
+
 type Props = {
   id: string;
 };
- 
+
 export const GridCarousel = ({ id }: Props) => {
   const { locale } = useRouter();
- 
+
   const { loading, data } = useQuery(getGridSectionQuery(id), {
     variables: {
       locale: locale,
     },
   });
- 
- 
+
+
   if (loading) return <div></div>;
- 
+
   return (
-   
+
         <Splide options={{ perPage: 1, pagination: true, type: 'loop', focus: 'center', arrows: false }} className={styles.splide}>
-       
-       
+
+
           {data.gridSection.itemsCollection.items.map(
             (item: any, index: number) => (
-   
+
       <SplideSlide key={index} className={styles.item}>
+      <div className={styles.wrapper}>
         <div className={styles.iconContainer}>
           <div className={styles.icon}>
             <Image
@@ -44,9 +46,15 @@ export const GridCarousel = ({ id }: Props) => {
               quality={70}
             />
           </div>
+
         </div>
         <h4>{item.title}</h4>
         <p>{item.description}</p>
+       </div>
+        <Link
+        href={item.slug}>
+        <button className="styles.link">{item.textButton}</button>
+        </Link>
       </SplideSlide>
  
             )

@@ -2,12 +2,16 @@
 
 
 .item {
-  width: Max(250px, 70%);
-  height: Max(250px, 80%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: Max(240px, 70%);
+  height: Max(240px, 80%);
   margin: 35px 1em;
   padding: 25px;
   background-color: var(--background-color);
   border-radius: 10px;
+
 
   p {
     padding-top: 1em;
@@ -36,6 +40,19 @@
   @include respond-to("l") {
     margin-bottom: 3em;
   }
+
+  button{
+    background-color: transparent;
+    border: none;
+    color: var(--getHubLime);
+    font-family: "Poppins";
+    font-size: 16px;
+    margin-top: 28px;
+    padding-left: 1em;
+  }
+  button:hover{
+    color: white;
+  }
 }
 
 .iconContainer {
@@ -52,7 +69,7 @@
 .splide {
   display: flex;
   max-width: 850px;
-  height: 45vh;
+  height: 54vh;
   margin-top: 40px;
   overflow-x: scroll;
   -webkit-overflow-scrolling: touch;
