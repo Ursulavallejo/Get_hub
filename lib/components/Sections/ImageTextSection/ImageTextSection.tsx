@@ -14,7 +14,6 @@ type Props = {
 
 export const ImageTextSection = ({ id }: Props) => {
   const { locale } = useRouter();
-  const router = useRouter();
 
   const { loading, data } = useQuery(getImageTextSectionQuery(id), {
     variables: {
@@ -65,16 +64,22 @@ export const ImageTextSection = ({ id }: Props) => {
               options
             )}
 
-          {data.imageTextSection.buttonText && (
-
-
-          <Link href={router.locale == 'sv' ? '/nyheter' : '/news'}>
-
+{ /* 1st version with a fixed slug name*/}
+            {data.imageTextSection.buttonText && (
+          <Link href={ '/news' }>
           <button className="buttonStyle">
               {data.imageTextSection.buttonText}
             </button>
             </Link>
           )}
+{/*                 2nd version with a fixed slug name
+                   {data.imageTextSection.buttonText && (
+                    <Link href={router.locale == 'sv' ? '/nyheter' : '/news'}>
+                    <button className="buttonStyle">
+                        {data.imageTextSection.buttonText}
+                      </button>
+                      </Link>
+                    )} */}
         </div>
       </div>
     </div>

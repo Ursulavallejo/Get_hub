@@ -19,7 +19,6 @@
   }
 
   .wrapper {
-
     display: flex;
     flex-direction: column;
     max-width: 1600px;
@@ -31,6 +30,9 @@
     @include respond-to("l") {
       margin: 1em auto;
       flex-direction: row;
+    }
+    @include respond-to("xxl") {
+      max-width: 2500px;
     }
   }
 }
@@ -90,7 +92,6 @@
   }
   li {
     color: var(--getHubLime);
-
   }
 }
 .greendot {
@@ -103,7 +104,6 @@
   width: 30px;
   height: 30px;
   min-width: 30px;
-
 }
 
 .ulWrapper {
