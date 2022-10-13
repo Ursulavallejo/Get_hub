@@ -23,8 +23,6 @@ i
 9lib/components/Sections/PricingSection/PricingSection.tsx,a\e\ae256590aac0ba9b4ef763b43b4d45e8db6d44e3
 G
 styles/breakpoints.scss,b\b\bb5091fb050dea11b8c2677d6a2668acbef5d658
-n
->lib/components/Sections/CheckListSection/CheckList.module.scss,3\f\3fe10b7c28c466bd1a5e23567d7707a0ee3c03c4
 @
 pages/[slug].tsx,8\8\88096f4b7b8644123727f1ea3ba60c50adc05d0f
 …

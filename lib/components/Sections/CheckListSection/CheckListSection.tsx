@@ -18,7 +18,7 @@ export const CheckListSection = ({ id }: Props) => {
       locale: locale,
     },
   });
-console.log('CHECKLIST', data)
+//console.log('CHECKLIST', data)
    const renderCheckListItem = (item: any, index: number) => {
     return (
        <div key={index} className={styles.item}>
@@ -52,7 +52,9 @@ console.log('CHECKLIST', data)
 
     <section className={styles.container} id="case">
       <div className={styles.wrapper}>
- {/*         <div className={styles.header}>
+ {/*        In case want o include a title from Contentful
+
+        <div className={styles.header}>
           <h2>{data?.checkListSection.title}</h2>
         </div> */}
 

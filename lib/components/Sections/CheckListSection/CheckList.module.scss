@@ -8,17 +8,20 @@
   align-items: center;
   padding: 5px 24px;
   @include respond-to("s"){
-    padding: 20px 45px;
+    padding: 20px 3.5em;
   }
 
   @include respond-to("m") {
-    padding: 50px  45px;
+    padding: 50px  3.5em;
   }
   @include respond-to("l") {
-    padding: 2em  24px;
+    padding: 2em  3.5em;
   }
   @include respond-to("xl") {
-    padding: 3em  4.5em;
+    padding: 3em  10%;
+  }
+  @include respond-to("xxl") {
+    padding: 3em  7%;
   }
 
 }
@@ -32,7 +35,7 @@
 
 
 .wrapper {
-  max-width: 1600px;
+  // max-width: 1600px;
   margin: auto;
   height: auto;
   padding-bottom: 3rem;
@@ -48,12 +51,18 @@
   @include respond-to("l"){
     padding-top: 1.5rem;
     padding-bottom: 7.2rem;
+    margin: 0 2.5%;
   }
 
   @include respond-to("xl"){
     padding-top: 0.5rem;
     padding-bottom: 6.2rem;
-    max-width: 2900px;
+    max-width: 2000px;
+    margin: 0 8%;
+  }
+  @include respond-to("xxl"){
+    max-width: 2700px;
+    margin: 0 10%;
   }
 
 }
