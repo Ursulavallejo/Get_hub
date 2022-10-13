@@ -29,7 +29,6 @@
     }
     @include respond-to("l") {
       margin: 2.5em 3em 0 2.5em;
-      flex-direction: row;
     }
     @include respond-to("xl") {
       max-width: 2900px;
@@ -43,6 +42,7 @@
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+
 
   @include respond-to("s") {
     display: flex;
@@ -58,11 +58,12 @@
     width:60%;
     margin-left: 5em;
     margin-bottom: -1.75em;
+
   }
   @include respond-to("xl") {
     width: 67%;
     margin-left: 6em;
-    margin-bottom: -0.04em;
+    margin-bottom: -0.06em;
   }
 }
 

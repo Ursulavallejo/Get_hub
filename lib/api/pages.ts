@@ -77,11 +77,6 @@ export const getGlobalQuery = (): DocumentNode => {
   `;
 };
 
-
-/*query ($locale: String!, $slug: String!)  {
-  landingPageCollection(where: { slug: $slug },limit:1,  locale: $locale){
-
-  */
 export const getLandingPageQuery = (slug: string): DocumentNode => {
   return gql`
     query ($locale: String!)  {

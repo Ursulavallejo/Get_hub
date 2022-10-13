@@ -25,12 +25,8 @@ G
 styles/breakpoints.scss,b\b\bb5091fb050dea11b8c2677d6a2668acbef5d658
 n
 >lib/components/Sections/CheckListSection/CheckList.module.scss,3\f\3fe10b7c28c466bd1a5e23567d7707a0ee3c03c4
-}
-Mlib/components/Sections/MoreInfoImageSection/MoreInfoImageSection.module.scss,f\7\f79f6c0a6957cdf040f0ad8dd053a3b4a7403886
 @
 pages/[slug].tsx,8\8\88096f4b7b8644123727f1ea3ba60c50adc05d0f
-X
-(lib/components/footer/footer.module.scss,e\8\e87d6566d0f418f29fea3eb7769895b4b19cf9ed
 …
 Ulib/components/Sections/MoreFunctionsGridSection/MoreFunctionsGridSection.module.scss,c\7\c7257220350ff8e09b920f8c16d193383b054f2a
 N
@@ -49,10 +45,6 @@ i
 9lib/components/Sections/ContactSection/ContactSection.tsx,a\5\a53fc6e6ce4d934d6fa4af59a0ef8153e1ee6a3c
 G
 lib/api/apolloClient.ts,6\a\6a310a8176e655846dea06d428e27f3fdd0bedf8
-@
-lib/api/pages.ts,c\c\ccc3531518382ff5e2c1593bffcb58f35bee46a9
-C
-lib/api/sections.ts,5\3\53005f6e71016aed83c6d80d9ed5d5ea20beaf3d
 :
 
 Dockerfile,6\6\6651ddff6eb82c840ced7c1dddee15c6e1913dd4
