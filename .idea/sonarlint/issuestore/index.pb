@@ -15,8 +15,6 @@ I
 lib/components/myHead.tsx,b\8\b8e5fe32c31c008227472f1c57bead5f0ec4ba07
 G
 styles/breakpoints.scss,b\b\bb5091fb050dea11b8c2677d6a2668acbef5d658
-@
-pages/[slug].tsx,8\8\88096f4b7b8644123727f1ea3ba60c50adc05d0f
 N
 styles/landingPage.module.scss,7\6\7611f2bdecab9d2a28d8ed7c574ad10f1a9f57ab
 E

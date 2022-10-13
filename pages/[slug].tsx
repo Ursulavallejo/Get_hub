@@ -6,6 +6,8 @@ import { LandingPageModel } from "../lib/models/landingPageModel";
 import { getLandingPageQuery } from "../lib/api/pages";
 import { getSection } from "../lib/utils/sectionPicker";
 import Image from "next/image";
+import { useEffect } from 'react';
+import { useQuery } from "@apollo/client";
 
 
 type Props = {
@@ -14,17 +16,23 @@ type Props = {
 
 
 const LandingPageInfo =  ({ data }: Props) => {
-  const { header, introText, heroImage, seoMetadata, slug } = data;
+  const { header, introText, heroImage, seoMetadata } = data;
 
-  console.log('LANDING', data)
-
+/*
+  useEffect(()=> {
+  console.log(router.locale);
+  useQuery
+  }, [router.locale])
+ */
 
    return (
       <>
 
             <div className={styles.container}>
+
               <div className={styles.textWrapper}>
                   <h1 className={styles.header}>{header}</h1>
+
                   <div className={styles.imageWrapper}>
                           <Image
                             src={heroImage.url}
@@ -37,7 +45,8 @@ const LandingPageInfo =  ({ data }: Props) => {
                             className={styles.image}
                           />
                 </div>
-                  <p className={styles.text}>{introText}</p>
+                <p className={styles.text}>{introText}</p>
+
               </div>
 
               <div className={styles.imgContainer}>
@@ -67,7 +76,7 @@ const LandingPageInfo =  ({ data }: Props) => {
 
 
  export const getServerSideProps: GetServerSideProps = async ({ locale, params }) => {
-
+ console.log(params.slug)
   const { data, error } = await client.query({
     query: getLandingPageQuery(`${params.slug}`),
     variables: {
