@@ -31,8 +31,6 @@ n
 Ulib/components/Sections/MoreFunctionsGridSection/MoreFunctionsGridSection.module.scss,c\7\c7257220350ff8e09b920f8c16d193383b054f2a
 N
 styles/landingPage.module.scss,7\6\7611f2bdecab9d2a28d8ed7c574ad10f1a9f57ab
-X
-(lib/components/NavBar/Navbar.module.scss,e\e\ee4b9ffca650b3440d1992a583c8e7b1b332d51a
 i
 9lib/components/Sections/FaqSection/FaqSection.module.scss,0\7\0716f477c924b133d81b0a67140a6dce89101b2d
 m

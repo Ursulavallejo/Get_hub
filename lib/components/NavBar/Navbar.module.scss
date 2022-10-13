@@ -2,6 +2,7 @@
 
 
 .container {
+  max-width: 1700px;
   box-sizing: border-box;
   margin: 0;
   display: flex;
@@ -36,7 +37,30 @@
     padding-left: 10rem;
   }
   @include respond-to("xl"){
-    height: 4vh;
+    height: 6.9vh;
+    left: 20%;
+  }
+  @include respond-to("xxl"){
+    height: 9vh;
+    left: 10%;
+    max-width: 2700px;
+  }
+}
+
+.navContainer {
+  box-sizing: border-box;
+  background: var(--background);
+  position: fixed;
+  height: 14vh;
+  z-index: 105;
+  overflow-y: hidden;
+  top: 0;
+  width: 100%;
+  @include respond-to("xl"){
+    height: 7vh;
+  }
+  @include respond-to("xxl"){
+    height: 9vh;
   }
 }
 

@@ -5,7 +5,6 @@ import styles from './Navbar.module.scss';
 import Image from 'next/image';
 import { Link } from 'react-scroll';
 import Link2 from 'next/link'
-import { LocaleLinkWrapper } from '../../utils/localeLinkWrapper';
 import { useRouter } from 'next/router';
 import { MdOutlineLanguage } from 'react-icons/md';
 import { BiHomeSmile } from 'react-icons/bi';
@@ -17,6 +16,9 @@ type Props = {
 
 const Navbar = () => {
   const router = useRouter();
+
+
+//console.log('router', router)
 
   const { data, loading } = useQuery(getGlobalQuery(), {
     variables: {
@@ -30,10 +32,9 @@ const Navbar = () => {
   const { getHubLogoTopGreen } = data.globalsCollection.items[0];
 
   return (
-
+    <div className={styles.navContainer}>
     <div className={styles.container}>
-
-      <div className={styles.imgContainer}>
+    <div className={styles.imgContainer}>
         <Image
           src={getHubLogoTopGreen.url}
           alt="getHubLogo"
@@ -95,35 +96,33 @@ const Navbar = () => {
             {router.locale == 'sv' ? 'Kontakt' : 'Contact'}
           </Link>
         </div>
-        <div className={styles.languageContainer} >
+        <div className={styles.languageContainer}>
         {/* <LocaleLinkWrapper> */}
-
        <Link2
-        href={router.asPath}
+       href={router.asPath}
         locale={router.locale == 'sv' ? 'en' : 'sv'} >
         <div className={styles.languageItem}>
         {router.locale == 'sv' ? 'English' : 'Svenska'}
          <MdOutlineLanguage size={18} />
          </div>
          </Link2>
+         {/*      This work only for the first page to translate. Left on the repo as reference same as the LocaleLinkWrapper
 
-{/*      This work only for the first page to translate. Left on the repo as reference same as the LocaleLinkWrapper
-
-          <Link
-            onClick={() => {
-              router.push('', '', {
-                locale: router.locale == 'sv' ? 'en' : 'sv',
-              });
-            }}
-          >
-            {router.locale == 'sv' ? 'English' : 'Svenska'}
-            <MdOutlineLanguage size={18} />
-          </Link> */}
-        {/*   </LocaleLinkWrapper> */}
+                   <Link
+                     onClick={() => {
+                       router.push('', '', {
+                         locale: router.locale == 'sv' ? 'en' : 'sv',
+                       });
+                     }}
+                   >
+                     {router.locale == 'sv' ? 'English' : 'Svenska'}
+                     <MdOutlineLanguage size={18} />
+                   </Link> */}
+                 {/*   </LocaleLinkWrapper> */}
         </div>
       </nav>
     </div>
-
+    </div>
 
   );
 };
