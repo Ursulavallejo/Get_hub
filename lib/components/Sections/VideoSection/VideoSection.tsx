@@ -40,11 +40,9 @@ const { locale } = useRouter();
   
   }
 
-
-
     return (
     <div className={styles.container} id="videoSec">
-
+    <div className={styles.wrapper}>
     <div className={styles.content}>
         {data.videoSection?.richText?.json && documentToReactComponents(
          data.videoSection.richText.json,)}
@@ -54,6 +52,7 @@ const { locale } = useRouter();
           {data.videoSection.buttonText}
           </button>
            )}
+    </div>
     </div>
 
     <div className={styles.imgWrapper}>

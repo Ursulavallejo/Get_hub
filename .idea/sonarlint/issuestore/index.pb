@@ -19,8 +19,6 @@ G
 pages/[slug].tsx,8\8\88096f4b7b8644123727f1ea3ba60c50adc05d0f
 N
 styles/landingPage.module.scss,7\6\7611f2bdecab9d2a28d8ed7c574ad10f1a9f57ab
-m
-=lib/components/Sections/VideoSection/VideoSection.module.scss,b\6\b6b72db664564c60197368e08dbd5ea5dcf8c50d
 E
 pages/api/sendgrid.js,1\9\199bd86ed199b2a3a0c5ac39f646b418b0494e6e
 G
