@@ -4,6 +4,7 @@ import { getGridSectionQuery } from "../../../api/sections";
 import styles from "./GridSection.module.scss";
 import Image from "next/image";
 import { GridCarousel } from './GridCarousel'
+import Link from "next/link";
 
 type Props = {
   id: string;
@@ -20,23 +21,32 @@ export const GridSection = ({ id }: Props) => {
 
    const renderGridItem = (item: any, index: number) => {
     return (
-       <div key={index} className={styles.item}>
-         <div className={styles.iconContainer}>
-           <div className={styles.icon}>
-             <Image
-               src={item.logo.url}
-               width={50}
-               height={50}
-               alt="icons"
-               objectFit="contain"
-               loading="eager"
-               quality={70}
-             />
+    <div className={styles.itemContainer}>
+    <div key={index} className={styles.item}>
+             <div className={styles.iconContainer}>
+               <div className={styles.icon}>
+                 <Image
+                   src={item.logo.url}
+                   width={50}
+                   height={50}
+                   alt="icons"
+                   objectFit="contain"
+                   loading="eager"
+                   quality={70}
+                 />
+               </div>
+             </div>
+             <h4>{item.title}</h4>
+             <p>{item.description}</p>
+
+
            </div>
-         </div>
-         <h4>{item.title}</h4>
-         <p>{item.description}</p>
-       </div>
+           <Link
+           href={item.slug}>
+           <button >{item.textButton}</button>
+           </Link>
+    </div>
+
      );
    };
 
