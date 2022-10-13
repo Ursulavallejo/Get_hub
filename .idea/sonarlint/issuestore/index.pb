@@ -21,8 +21,6 @@ G
 styles/breakpoints.scss,b\b\bb5091fb050dea11b8c2677d6a2668acbef5d658
 @
 pages/[slug].tsx,8\8\88096f4b7b8644123727f1ea3ba60c50adc05d0f
-…
-Ulib/components/Sections/MoreFunctionsGridSection/MoreFunctionsGridSection.module.scss,c\7\c7257220350ff8e09b920f8c16d193383b054f2a
 N
 styles/landingPage.module.scss,7\6\7611f2bdecab9d2a28d8ed7c574ad10f1a9f57ab
 m

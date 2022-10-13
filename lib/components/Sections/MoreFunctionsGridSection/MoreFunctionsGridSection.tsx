@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import { getMoreFunctionsGridSectionQuery } from "../../../api/sections";
 import styles from "./MoreFunctionsGridSection.module.scss";
 import Image from "next/image";
+import Link from "next/link";
 
 type Props = {
   id: string;
@@ -20,6 +21,7 @@ export const MoreFunctionsGridSection = ({ id }: Props) => {
      const renderMoreFunctionsGridItem = (item: any, index: number) => {
         return (
        <div key={index} className={styles.item}>
+       <div key={index} className={styles.itemWrapper}>
          <div className={styles.iconContainer}>
            <div className={styles.icon}>
              <Image
@@ -31,11 +33,15 @@ export const MoreFunctionsGridSection = ({ id }: Props) => {
                loading="eager"
                quality={70}
              />
-
            </div>
            <h4>{item.title}</h4>
          </div>
          <p>{item.description}</p>
+         </div>
+         <Link
+         href={item.slug}>
+         <button className="styles.link">{item.textButton}</button>
+         </Link>
        </div>
      );
    };
