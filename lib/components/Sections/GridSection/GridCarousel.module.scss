@@ -7,7 +7,7 @@
   align-items: flex-start;
   width: Max(240px, 70%);
   height: Max(240px, 80%);
-  margin: 35px 1em;
+  margin: 35px 2em;
   padding: 25px;
   background-color: var(--background-color);
   border-radius: 10px;
@@ -71,6 +71,7 @@
   max-width: 850px;
   height: 54vh;
   margin-top: 40px;
+
   overflow-x: scroll;
   -webkit-overflow-scrolling: touch;
 

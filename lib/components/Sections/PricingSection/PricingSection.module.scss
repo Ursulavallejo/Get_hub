@@ -2,7 +2,7 @@
 
 .container {
   box-sizing: border-box;
-  margin: 4em 1em;
+  margin: 4em 2.5em;
   display: block;
   justify-content: center;
   align-items: center;
@@ -25,11 +25,14 @@
     @include respond-to("m") {
       margin: 20px auto;
     }
+    @include respond-to("l") {
+      max-width: 1350px;
+    }
     @include respond-to("xl") {
-      max-width: 2000px;
+      max-width: 1600px;
     }
     @include respond-to("xxl") {
-      max-width: 2700px;
+      max-width: 2550px;
     }
   }
 }
@@ -67,11 +70,19 @@
   background-color: #42576a43;
   border-radius: 10px;
   @include respond-to("s") {
-    width: Max(250px, 80%);
+    width: Max(250px, 90%);
     height: (350px, 100%);
+  }
+  @include respond-to("m") {
+    width: Max(250px, 95%);
+
   }
   @include respond-to("l") {
     width: 100%;
+    height: 440px;
+  }
+  @include respond-to("xl") {
+    width: 90%;
     height: 440px;
   }
 

@@ -8,13 +8,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 60px 0.5em 100px 0.5em;
+  padding: 60px 1.5em 100px 1.5em;
   position: relative;
   max-width: 1600px;
 
   @include respond-to("s") {
     background: transparent;
-    padding: 6.7em 1.5em;
+    padding: 6.7em 0.5em;
   }
 
 
@@ -25,7 +25,7 @@
   }
 
   @include respond-to("l") {
-    margin: 40px 0px;
+    margin: 40px 0;
 
   }
 
@@ -35,7 +35,7 @@
   }
   @include respond-to("xxl") {
     max-width: 2700px;
-    margin: 60px 13%;
+    margin: 60px 0;
   }
 }
 
@@ -47,6 +47,7 @@
   margin: 0 auto;
   background-color: transparent;
   z-index: 2;
+
 
   @include respond-to("m") {
     width: 30%;
@@ -60,7 +61,10 @@
     width: 40%;
     margin: 5px 20px;
   }
-
+  @include respond-to("xxl") {
+    width: 40%;
+    margin: 5px 30px;
+  }
 }
 
 .logo {
@@ -120,25 +124,29 @@
 
   @include respond-to("s") {
     font-size: 42px;
-    width: 90%;
+    width:100%;
     text-align: left;
 
   }
 
-
-
   @include respond-to("m") {
     position: absolute;
     top: 0;
-    left: 10%;
+    left: 3.5%;
     z-index: 3;
     width: 30%;
     margin-top: 5.5em;
   }
 
   @include respond-to("l") {
-    width: 25%;
+    width: 30%;
     font-size: 50px;
+  }
+  @include respond-to("xl") {
+    margin-left: 2.5em;
+  }
+  @include respond-to("xxl") {
+    margin-left: 3.2em;
   }
 }
 
@@ -146,10 +154,13 @@
   width: 100%;
   background-color: transparent;
   z-index: 100;
+  padding: 0 0.5em;
 
-
+  @include respond-to("s"){
+    width: 95%;
+  }
   @include respond-to("m") {
-    width: 50%;
+    width: 55%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -157,10 +168,18 @@
     margin-top: 9em;
     margin-right: -100px;
   }
+  @include respond-to("l") {
+    width: 50%;
+    margin-right: -11%;
 
+  }
   @include respond-to("xl") {
     height: 38rem;
-
+    margin-right: 12em;
+  }
+  @include respond-to("xxl") {
+    height: 38rem;
+    margin-right: -14em;
   }
 }
 

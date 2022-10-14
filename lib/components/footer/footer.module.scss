@@ -4,18 +4,17 @@
   max-width: 1600px;
   margin: auto;
   height: auto;
-  //width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 90px 32px;
+  padding: 90px 30px;
 
   @include respond-to("s") {
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
-    padding: 90px 70px;
+    padding: 90px 45px;
   }
   @include respond-to("xxl"){
     max-width: 2700px;
@@ -36,9 +35,14 @@
     align-items: flex-start;
     padding: 0 ;
 
+
   }
   @include respond-to("m") {
     margin-right: 2%;
+  }
+  @include respond-to("xxl") {
+    margin-right: 1%;
+    margin-left: 2%;
   }
 }
 
@@ -47,11 +51,15 @@
   margin-right: 48.21px;
   @include respond-to("s") {
     width: 200px;
-    margin-left: 1.5em;
+    margin-left: 0.5em;
   }
   @include respond-to("m") {
     width: 270px;
     margin-left:3%
+  }
+  @include respond-to("xl") {
+    width: 300px;
+    margin-left:0;
   }
 }
 
@@ -59,12 +67,17 @@
   width: 50%;
   @include respond-to("s") {
     width: 240px;
-    margin-left: 1em;
+    margin-left: 0.1em;
   }
   @include respond-to("m") {
     width: 280px;
     margin-left:0;
   }
+  @include respond-to("xl") {
+    width: 320px;
+    margin-right:3em;
+  }
+
 }
 
 .gethubimg {
@@ -100,7 +113,7 @@
     flex-direction: column;
     justify-content: flex-start;
     padding: 0px;
-    margin-right: 88px;
+    margin-right: 40px;
     h4 {
       margin: 0px 0px 30px 0px;
       font-size: 18px;
@@ -167,5 +180,8 @@
     h3 {
       font-size: 30px;
     }
+  }
+  @include respond-to("xxl"){
+    margin-right: 2.5em;
   }
 }
