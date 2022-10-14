@@ -10,18 +10,25 @@
 
   @include respond-to("m") {
     display: flex;
-    margin: 8em 2em 2em 3em;
+    margin: 8em 2em 0 3em;
   }
   @include respond-to("l") {
     margin: 4em 2em 0 2em;
-
   }
+  @include respond-to("xl") {
+    margin: 11.5em 2em 0 2em;
+  }
+  @include respond-to("xxl") {
+    margin: 14em 2em 0 2em;
+  }
+
 
   .wrapper {
     display: flex;
     flex-direction: column;
     max-width: 1600px;
     margin: auto;
+    position: relative;
 
     @include respond-to("m") {
       margin: 20px auto 0 20px ;
@@ -31,6 +38,10 @@
       margin: 2.5em 3em 0 2.5em;
     }
     @include respond-to("xl") {
+      max-width: 2000px;
+
+    }
+    @include respond-to("xxl") {
       max-width: 2900px;
 
     }
@@ -43,27 +54,29 @@
   align-items: center;
   margin: 0 auto;
 
-
   @include respond-to("s") {
     display: flex;
     width: 70%;
   }
 
   @include respond-to("m") {
+    position: absolute;
+    bottom: 0;
     width: 50%;
-    margin-bottom: -12.1em;
   }
 
   @include respond-to("l") {
-    width:60%;
+    width:40%;
     margin-left: 5em;
-    margin-bottom: -1.75em;
 
   }
   @include respond-to("xl") {
-    width: 67%;
+    width: 50%;
     margin-left: 6em;
-    margin-bottom: -0.06em;
+  }
+  @include respond-to("xxl") {
+    width: 45%;
+    margin-left: 6em;
   }
 }
 
@@ -88,6 +101,8 @@
 
   }
   @include respond-to("m") {
+    position: relative;
+    left: 50%;
     margin-top: 1rem;
     width: 50%;
     margin-right: 1em;
@@ -108,18 +123,17 @@
     color: var(--getHubLime);
   }
   @include respond-to("l"){
-    width: 70%;
-    margin-left:9em;
-    padding-left: 3.5em;
+    width: 50%;
+    margin-left:2em;
+    padding-left: 1.5em;
     padding-top: 3em;
     h1{
       font-size: 50px;
     }
   }
   @include respond-to("xl"){
-    width: 80%;
-    margin-left: 9em;
-
+    width: 50%;
+    margin-left: 5em;
   }
 }
 
