@@ -28,8 +28,6 @@ P
  lib/components/footer/Footer.tsx,b\a\ba13ee0ad1522b03bd79eed3e3908ccde46225df
 P
  lib/components/NavBar/NavBar.tsx,5\1\5169ba9aeed07297f60a5e9e975c0cfa21e6bad0
-X
-(lib/components/NavBar/Navbar.module.scss,e\e\ee4b9ffca650b3440d1992a583c8e7b1b332d51a
 n
 >lib/components/Sections/CheckListSection/CheckList.module.scss,3\f\3fe10b7c28c466bd1a5e23567d7707a0ee3c03c4
 m
