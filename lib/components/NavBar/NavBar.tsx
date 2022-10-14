@@ -35,6 +35,7 @@ const Navbar = () => {
     <div className={styles.navContainer}>
     <div className={styles.container}>
     <div className={styles.imgContainer}>
+    <Link2 href="/">
         <Image
           src={getHubLogoTopGreen.url}
           alt="getHubLogo"
@@ -44,6 +45,7 @@ const Navbar = () => {
           loading="eager"
           quality={70}
         />
+        </Link2>
       </div>
       <nav className={styles.nav}>
 

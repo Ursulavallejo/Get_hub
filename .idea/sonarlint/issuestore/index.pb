@@ -26,8 +26,6 @@ X
 (lib/components/footer/footer.module.scss,e\8\e87d6566d0f418f29fea3eb7769895b4b19cf9ed
 P
  lib/components/footer/Footer.tsx,b\a\ba13ee0ad1522b03bd79eed3e3908ccde46225df
-P
- lib/components/NavBar/NavBar.tsx,5\1\5169ba9aeed07297f60a5e9e975c0cfa21e6bad0
 n
 >lib/components/Sections/CheckListSection/CheckList.module.scss,3\f\3fe10b7c28c466bd1a5e23567d7707a0ee3c03c4
 m
