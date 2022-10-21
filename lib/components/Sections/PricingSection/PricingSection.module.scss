@@ -15,8 +15,16 @@
   }
 
   @include respond-to("l") {
-    margin: 2em 2em 0em 2em;
+    margin: 2rem 4% 0rem 4%;
     padding-top: 3em;
+  }
+  @include respond-to("xxl") {
+    padding-top: 3.5em;
+    margin: 4rem 6rem;
+  }
+  @include respond-to("xxxl") {
+    padding-top: 3.5em;
+    margin: 5rem 7.5rem 5rem 5rem;
   }
 
   .wrapper {
@@ -26,13 +34,16 @@
       margin: 20px auto;
     }
     @include respond-to("l") {
-      max-width: 1350px;
+      max-width: 1300px;
     }
     @include respond-to("xl") {
-      max-width: 1600px;
+      max-width: 1800px;
     }
     @include respond-to("xxl") {
-      max-width: 2550px;
+      max-width: 2400px;
+    }
+    @include respond-to("xxxl") {
+      max-width: 2600px;
     }
   }
 }
@@ -50,7 +61,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-
   }
 }
 
@@ -84,6 +94,10 @@
   @include respond-to("xl") {
     width: 90%;
     height: 440px;
+  }
+  @include respond-to("xxl") {
+    width: 90%;
+    height: 500px;
   }
 
   h2 {

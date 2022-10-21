@@ -5,12 +5,12 @@
   margin: 0;
   justify-content: center;
   align-items: center;
-  background-color: var(--getItBlue-2);
+  background-color: #2c5372;
   padding: 10px 24px;
 
 
   @include respond-to("s"){
-    //padding: 2.5em 2em 0;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -20,6 +20,9 @@
     padding: 80px 40px;
   }
 
+  @include respond-to("xl") {
+    padding: 95px 40px;
+  }
 
 
   .wrapper {
@@ -35,18 +38,25 @@
     @include respond-to("m") {
       margin: 40px auto;
       flex-direction: row;
+
     }
     @include respond-to("l") {
       margin-left: 1rem;
 
     }
     @include respond-to("xl") {
-      max-width: 1700px;
-      margin-left: 17%;
+      max-width: 1900px;
+      margin:0 3.7rem 0 2.5rem ;
+
 
     }
     @include respond-to("xxl") {
       max-width: 2400px;
+      margin:0 3.7rem 0 5.5rem ;
+    }
+    @include respond-to("xxxl") {
+      max-width: 2700px;
+      margin:0 7.5rem 0 7rem ;
     }
 
   }
@@ -74,6 +84,7 @@
   @include respond-to("s") {
     margin: 0 1.5em;
 
+
   }
   @include respond-to("m") {
     text-align: left;
@@ -86,6 +97,10 @@
 
   @include respond-to("xl") {
     width: 50%;
+  }
+
+  @include respond-to("xxl"){
+    width: 45%;
   }
 }
 
@@ -112,7 +127,7 @@
     width: Max(270px, 85%);
     height: Max(270px, 75%);
     gap: 5px;
-    margin-bottom: 2em;
+    margin-bottom: 2rem;
 
   }
   @include respond-to("l"){
@@ -120,7 +135,7 @@
     height: Max(260px, 85%);
   }
   @include respond-to("xl"){
-    width: Max(270px, 70%);
+    width: Max(260px, 85%);
     height: Max(260px, 85%);
   }
 
@@ -192,6 +207,7 @@
 
 
   @include respond-to("s") {
+    align-items: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 0 1em;
@@ -199,12 +215,16 @@
     height: 100%;
     overflow: hidden;
     visibility: visible;
+    max-width: 950px;
+    margin-left: 2.5%;
 
   }
   @include respond-to("m") {
     grid-auto-rows: 1fr 1fr 1fr;
     margin-bottom: 2.5rem;
     column-gap: 0.5em;
+    max-width: 850px;
+    margin-left: auto;
 
 
   }
@@ -214,9 +234,12 @@
 
   }
   @include respond-to("xl") {
-    padding-left: 1em;
+    padding-left: 1.5em;
     column-gap: 1.5em;
     max-width: 1100px;
+  }
+  @include respond-to("xxl"){
+    max-width: 1200px;
   }
 }
 

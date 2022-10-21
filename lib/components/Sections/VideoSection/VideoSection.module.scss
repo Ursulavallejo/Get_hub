@@ -14,7 +14,7 @@
     z-index: 1;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     padding: 13em 1.5em 0 1.5em;
     margin: 0 0.8em;
 
@@ -54,18 +54,21 @@
     }
     @include respond-to("xl"){
       padding-top: 30em;
-      margin-left: 16.5%;
+      margin-left: 2.5%;
       height: 40%;
       width: 55%;
       max-width: 800px;
     }
 
     @include respond-to("xxl"){
-      margin-left: 7.5%;
-      padding-top: 27em;
+      margin-left: 3.8%;
+      padding-top: 30%;
     }
   }
 
+  .wrapper{
+    position: relative;
+  }
 
   .imgWrapper {
     height: 110vw;
@@ -84,7 +87,10 @@
       height: 90vh;
     }
     @include respond-to("xl") {
-      height: 50vh;
+      height: 74vh;
+    }
+    @include respond-to("xxl") {
+      height: 72vh;
     }
     .video {
       object-fit: cover;

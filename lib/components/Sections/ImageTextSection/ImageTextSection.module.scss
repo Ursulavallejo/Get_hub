@@ -32,10 +32,13 @@
       flex-direction: row;
     }
     @include respond-to("xl") {
-      max-width: 1600px;
+      max-width: 1900px;
     }
     @include respond-to("xxl") {
       max-width: 2500px;
+    }
+    @include respond-to("xxxl") {
+      max-width: 2700px;
     }
   }
 }
@@ -64,6 +67,7 @@
   @include respond-to("l") {
     width: 50%;
   }
+
 }
 
 .right {
@@ -103,6 +107,20 @@
   }
   li {
     color: var(--getHubLime);
+  }
+
+  @include respond-to("xl"){
+    width: 50%;
+    margin-right: 2em;
+    p {
+      margin-right: 2em;
+    }
+  }
+  @include respond-to("xxl"){
+    margin-right: 2.5rem;
+  }
+  @include respond-to("xxxl"){
+    margin-right: 4.5rem;
   }
 }
 .greendot {

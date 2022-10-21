@@ -3,7 +3,7 @@
 .container {
   background-color: var(--lightBlue);
   margin: 0;
-  padding: 4em 2em;
+  padding: 4rem 2.2rem;
   width: 100%;
   align-items: center;
 
@@ -17,6 +17,8 @@
   @include respond-to("xl") {
     padding-left: 15% ;
   }
+
+
 
   .wrapper {
     padding-left: 8px;

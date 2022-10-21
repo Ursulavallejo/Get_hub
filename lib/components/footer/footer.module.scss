@@ -16,6 +16,10 @@
     align-items: flex-start;
     padding: 90px 45px;
   }
+
+  @include respond-to("xl"){
+    max-width: 1900px;
+  }
   @include respond-to("xxl"){
     max-width: 2700px;
   }
@@ -40,7 +44,15 @@
   @include respond-to("m") {
     margin-right: 2%;
   }
+
+  @include respond-to("xl") {
+    margin-left: 2%;
+  }
   @include respond-to("xxl") {
+    margin-right: 1%;
+    margin-left: 3%;
+  }
+  @include respond-to("xxxl") {
     margin-right: 1%;
     margin-left: 2%;
   }
@@ -65,6 +77,7 @@
 
 .getitlogoWrapper {
   width: 50%;
+  margin-left: 1rem;
   @include respond-to("s") {
     width: 240px;
     margin-left: 0.1em;
@@ -181,7 +194,13 @@
       font-size: 30px;
     }
   }
+  @include respond-to("xl"){
+    margin-right: 3em;
+  }
   @include respond-to("xxl"){
-    margin-right: 2.5em;
+    margin-right: 4.5rem;
+  }
+  @include respond-to("xxxl"){
+    margin-right: 2.5%;
   }
 }

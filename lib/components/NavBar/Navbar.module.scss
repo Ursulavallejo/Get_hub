@@ -37,13 +37,21 @@
     padding-left: 3rem;
   }
   @include respond-to("xl"){
-    height: 6.9vh;
-    left: 16%;
+    max-width: 1900px;
+    height: 9vh;
+    padding-right: 3.5%;
+    padding-left: 3.5%;
   }
   @include respond-to("xxl"){
-    height: 9vh;
-    left: 6.5%;
+    height: 11vh;
     max-width: 2600px;
+    padding-right: 4.7%;
+    padding-left: 4.7%;
+  }
+  @include respond-to("xxxl"){
+    max-width: 2800px;
+    padding-right: 5%;
+    padding-left: 5%;
   }
 }
 
@@ -57,10 +65,13 @@
   top: 0;
   width: 100%;
   @include respond-to("xl"){
-    height: 7vh;
+    height: 10vh;
   }
   @include respond-to("xxl"){
-    height: 9vh;
+    height: 11vh;
+  }
+  @include respond-to("xxxl"){
+    height: 12vh;
   }
 }
 
@@ -84,6 +95,11 @@
   @include respond-to("xl") {
     margin-top: 1.5em;
     width: 10.5rem;
+
+  }
+  @include respond-to("xxl") {
+    margin-top: 2em;
+    width: 12.5rem;
 
   }
 }
@@ -121,7 +137,10 @@
   @include respond-to("xl") {
     font-size: 22px;
     width: 120px;
-    margin-top: 1em;
+    margin-top: 1.5em;
+  }
+  @include respond-to("xxl") {
+    margin-top: 1.5rem;
   }
 }
 
@@ -161,6 +180,9 @@
     width: 10rem;
     margin-top: 1em;
   }
+  @include respond-to("xxl") {
+    margin-top: 1.5rem;
+  }
 }
 
 .linkItem a:hover {
@@ -181,9 +203,17 @@
   }
   @include respond-to("m") {
     width: 2rem;
+    margin-top: 1.2rem;
+  }
+  @include respond-to("l"){
+    margin-top: 1.5rem;
   }
   @include respond-to("xl") {
     width: 3rem;
+
+  }
+  @include respond-to("xxl"){
+    margin-top: 1.7rem;
   }
 }
 
@@ -223,6 +253,12 @@
     top: 10px;
   }
   @include respond-to("xl"){
+    top: 5px;
+    font-size: 16px
+  }
+  @include respond-to("xxl"){
+    top: 15%;
+    right: 2%;
     font-size: 16px
   }
   .languageItem {

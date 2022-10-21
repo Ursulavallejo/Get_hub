@@ -16,7 +16,7 @@
     margin: 4em 2em 0 2em;
   }
   @include respond-to("xl") {
-    margin: 11.5em 2em 0 2em;
+    margin: 11.5rem 2.5rem 0 2.5rem;
   }
   @include respond-to("xxl") {
     margin: 14em 2em 0 2em;
@@ -38,21 +38,23 @@
       margin: 2.5em 3em 0 2.5em;
     }
     @include respond-to("xl") {
+      margin: 5rem 3em 0 1em;
       max-width: 2000px;
 
     }
     @include respond-to("xxl") {
       max-width: 2900px;
-
     }
   }
 }
 
 .left {
-  width: 90%;
+  width: 80%;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+
+
 
   @include respond-to("s") {
     display: flex;
@@ -66,17 +68,20 @@
   }
 
   @include respond-to("l") {
-    width:40%;
-    margin-left: 5em;
+    width:50%;
+    margin-left: 1em;
 
   }
   @include respond-to("xl") {
     width: 50%;
-    margin-left: 6em;
+    margin-left: 1em;
   }
   @include respond-to("xxl") {
     width: 45%;
-    margin-left: 6em;
+    margin-left: 4em;
+  }
+  @include respond-to("xxxl") {
+    margin-left: 3em;
   }
 }
 
@@ -96,8 +101,9 @@
   }
 
   @include respond-to("s"){
-    padding-right: 2.5em;
-    margin-left: 3em;
+    padding-right: 2.7em;
+    margin-left: 1.5rem;
+
 
   }
   @include respond-to("m") {
@@ -124,17 +130,37 @@
   }
   @include respond-to("l"){
     width: 50%;
-    margin-left:2em;
+    margin-left:2.5rem;
     padding-left: 1.5em;
     padding-top: 3em;
     h1{
       font-size: 50px;
     }
+    p {
+      padding-right: 1em;
+    }
   }
   @include respond-to("xl"){
-    width: 50%;
     margin-left: 5em;
   }
+
+  @include respond-to("xxl"){
+    padding-right: 5rem;
+    h1{
+      font-size: 55px;
+    }
+
+    p {
+      padding-right: 3.5rem;
+    }
+  }
+  @include respond-to("xxxl"){
+    padding-right: 6rem;
+    p {
+      padding-right: 4rem;
+    }
+  }
+
 }
 
 .ulWrapper {

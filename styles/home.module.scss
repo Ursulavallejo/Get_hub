@@ -9,20 +9,24 @@
   margin-top: 200px;
 
   @include respond-to("l") {
-    margin-top: 320px;
+    margin-top: 210px;
   }
   @include respond-to("xxl") {
-    margin-top: 460px;
+    margin-top: 320px;
   }
 
   .wrapper {
     max-width: 1600px;
     margin: auto;
-    @include respond-to("l") {
-      max-width: 2100px;
+
+    @include respond-to("xl") {
+      max-width: 1900px;
     }
     @include respond-to("xxl") {
       max-width: 2500px;
+    }
+    @include respond-to("xxxl") {
+      max-width: 2800px;
     }
 
   }
@@ -45,7 +49,6 @@
   }
   @include respond-to("m") {
     flex-direction: row;
-    justify-content: flex-start;
     padding: 40px;
     display: flex;
     align-items: center;
@@ -57,7 +60,13 @@
   }
   @include respond-to("xl"){
     padding: 55px 0;
-
+  }
+  @include respond-to("xxl"){
+    padding: 30px ;
+    margin-left: 2em;
+  }
+  @include respond-to("xxxl"){
+    margin-left: 3rem;
   }
 }
 
@@ -83,14 +92,23 @@
     width: auto;
     padding-top: 80px;
   }
-
-  @include respond-to("xl") {
-    padding-top: 120px;
-    margin: 0;
-    padding-right: 0;
+  @include respond-to("l") {
+    padding-top: 50px;
   }
 
-
+  @include respond-to("xl") {
+    width: 70%;
+    padding-top: 170px;
+    margin: 0;
+    padding-right: 0;
+    font-size: 60px;
+  }
+  @include respond-to("xxl") {
+    padding-top: 300px;
+    font-size: 70px;
+    width: 55%;
+    line-height: 6.50rem;
+  }
 
 }
 
@@ -110,7 +128,8 @@
     margin: 0;
   }
   @include respond-to("xl"){
-    width: 90%;
+    width: 75%;
+    padding-top: 1em;
   }
 }
 
@@ -125,10 +144,13 @@
 
   }
   @include respond-to("xl") {
-    width: 30%;
+    width: 50%;
+    padding-left: 3rem;
   }
   @include respond-to("xxl") {
-    padding-left: 0;
+    padding-left: 2rem;
+    width: 55%;
+
   }
 }
 
@@ -143,23 +165,25 @@
 
   @include respond-to("m") {
     position: absolute;
-    right: -8%;
-    margin: 0;
-    width: 56%;
+    right: -6%;
+    margin-top: 10%;
+    width: 55%;
   }
   @include respond-to("l") {
-    right: 1%;
-    margin: 0;
-    width: 52%;
+    right: -7%;
+    margin-top: 9%;
+    width: 60%;
   }
   @include respond-to("xl") {
-    margin-bottom: 4.7rem;
-    right: -1%;
+    width: 55%;
+    margin-bottom: 5%;
+    right: -3.5%;
   }
   @include respond-to("xxl") {
-    margin-bottom: 7.7rem;
-    right: -23%;
-    width: 69%;
+    margin-bottom: 8%;
+    width: 45%;
+    right: -2%;
+    padding-top: 3rem;
 
   }
 }

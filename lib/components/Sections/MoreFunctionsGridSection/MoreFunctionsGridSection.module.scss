@@ -6,8 +6,14 @@
   margin: auto;
   height: auto;
   max-width: 1600px;
+
+
   @include respond-to("xl"){
     max-width: 2600px;
+  }
+
+  @include respond-to("xxxl"){
+    max-width: 2800px;
   }
 
   .wrapper{
@@ -33,9 +39,10 @@
 
 .gridContainer{
   display: block;
-  max-width: 600px;
+  max-width: 450px;
   margin-top: 40px;
   height: 100%;
+  padding: 1.5em 1em;
 
 
   @include respond-to("s") {
@@ -54,31 +61,49 @@
   }
 
   @include respond-to("l"){
-    padding-left: 2em;
+    padding-left: 1rem;
+    margin-right: 0.5rem;
     column-gap: 5em;
   }
 
   @include respond-to("xl"){
     column-gap: 6em;
-    padding-left: 2em;
+    padding-left: 2rem;
+    margin-right: 0;
 
   }
+  @include respond-to("xxl"){
+    column-gap: 5em;
+    padding-left: 5rem;
+  }
+  @include respond-to("xxxl"){
+    column-gap: 4em;
+    padding-left: 4rem;
+  }
 }
+
 .header {
   text-align: left;
-  margin: 0 .4em;
+  margin: 0 2.7rem;
 
   @include respond-to("s"){
     padding-top: 0.7em;
-    padding-left: 1em;
+    max-width: 80%;
+  }
+  @include respond-to("m"){
+    margin: 0 2rem;
   }
   @include respond-to("l"){
-    padding-left: 0.5em;
-    max-width: 60%;
+    max-width: 70%;
+    margin: 0 2.5rem;
   }
   @include respond-to("xl"){
     padding-left: 1em;
-    max-width: 60%;
+    margin: 0 ;
+    max-width: 70%;
+  }
+  @include respond-to("xxl"){
+    max-width: 40%;
   }
 
 }

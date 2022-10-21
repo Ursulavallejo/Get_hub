@@ -8,20 +8,20 @@
   align-items: center;
   padding: 5px 24px;
   @include respond-to("s"){
-    padding: 20px 3.5em;
+    padding: 1.5rem 2rem ;
   }
 
   @include respond-to("m") {
-    padding: 50px  3.5em;
+    padding: 40px  1rem;
   }
   @include respond-to("l") {
-    padding: 2em  3.5em;
+    padding: 2rem  2rem  ;
   }
   @include respond-to("xl") {
-    padding: 3em  10%;
+    padding:2.5rem 0;
   }
   @include respond-to("xxl") {
-    padding: 3em  7%;
+    padding: 3em  5rem;
   }
 
 }
@@ -35,11 +35,11 @@
 
 
 .wrapper {
-  // max-width: 1600px;
+  max-width: 1600px;
   margin: auto;
   height: auto;
-  padding-bottom: 3rem;
-  padding-top: 1rem;
+  padding: 1rem 1.5rem 3rem 1.5rem;
+
   @include respond-to("s"){
     padding-bottom: 3.5rem;
     padding-top: 1rem;
@@ -49,20 +49,23 @@
     padding-bottom: 6.5rem;
   }
   @include respond-to("l"){
-    padding-top: 1.5rem;
-    padding-bottom: 7.2rem;
-    margin: 0 2.5%;
+    padding: 1.5rem 2rem 9.5rem 1.5rem;
+    margin: 0;
   }
 
   @include respond-to("xl"){
-    padding-top: 0.5rem;
-    padding-bottom: 6.2rem;
+    padding: 0.5rem 3rem 9.5rem 3rem;
     max-width: 2000px;
-    margin: 0 8%;
+    margin: 0 2rem;
   }
   @include respond-to("xxl"){
     max-width: 2700px;
-    margin: 0 10%;
+    padding: 0.5rem 1rem 9.5rem 1rem;
+
+  }
+  @include respond-to("xxxl"){
+    padding: 0.5rem 4.5rem 9.5rem 3rem;
+
   }
 
 }
@@ -78,8 +81,9 @@
     justify-content: space-between;
     display: flex;
     flex-direction: row;
-    gap: 2em;
+    gap: 2.5rem;
   }
+
 }
 
 .item {
@@ -104,8 +108,9 @@
     width: 40%;
   }
   @include respond-to("l"){
-    width: 25%;
+    width: 30%;
   }
+
 
 }
 
