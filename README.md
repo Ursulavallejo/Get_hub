@@ -1,12 +1,15 @@
 ## Internship GetIt Nordic
+## Project realized by Carin Wood & Ursula Vallejo.
 
 - [GetItNordic Web Page](https://getitnordic.com/)
 
-- [Web Page of the Project: GetHub](https://gethub.se/)
+- [Web Page of the version Project is launch: www.GetHub.es](https://gethub.se/)
 
-## Project realized by Carin Wood & Ursula Vallejo.
+- [Demo with all the implementation : Netufly](https://gethub-demo-projekt.netlify.app/)
 
-## Demo Project:
+
+
+## Video-Demo Project:
 
 
 
