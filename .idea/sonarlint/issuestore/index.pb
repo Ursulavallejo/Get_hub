@@ -11,17 +11,9 @@ I
 lib/components/myHead.tsx,b\8\b8e5fe32c31c008227472f1c57bead5f0ec4ba07
 E
 pages/api/sendgrid.js,1\9\199bd86ed199b2a3a0c5ac39f646b418b0494e6e
-G
-lib/api/apolloClient.ts,6\a\6a310a8176e655846dea06d428e27f3fdd0bedf8
 :
 
 Dockerfile,6\6\6651ddff6eb82c840ced7c1dddee15c6e1913dd4
-9
-	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
-@
-lib/api/pages.ts,c\c\ccc3531518382ff5e2c1593bffcb58f35bee46a9
-C
-lib/api/sections.ts,5\3\53005f6e71016aed83c6d80d9ed5d5ea20beaf3d
 P
  lib/components/footer/Footer.tsx,b\a\ba13ee0ad1522b03bd79eed3e3908ccde46225df
 m
@@ -48,16 +40,8 @@ I
 lib/components/Layout.tsx,7\c\7c5ed8ad05c41d02ef64af9a1925f56be3f23a76
 @
 pages/[slug].tsx,8\8\88096f4b7b8644123727f1ea3ba60c50adc05d0f
->
-pages/_app.tsx,5\5\550528cc072fa7d76d123e2f4303d4ab39daa8e8
-?
-pages/index.tsx,b\3\b3357635c26d1b52053382ce7e8a8640d31fedc8
-P
- lib/components/NavBar/NavBar.tsx,5\1\5169ba9aeed07297f60a5e9e975c0cfa21e6bad0
 X
 (lib/components/footer/footer.module.scss,e\8\e87d6566d0f418f29fea3eb7769895b4b19cf9ed
-X
-(lib/components/NavBar/Navbar.module.scss,e\e\ee4b9ffca650b3440d1992a583c8e7b1b332d51a
 n
 >lib/components/Sections/CheckListSection/CheckList.module.scss,3\f\3fe10b7c28c466bd1a5e23567d7707a0ee3c03c4
 q
@@ -80,9 +64,7 @@ m
 =lib/components/Sections/VideoSection/VideoSection.module.scss,b\6\b6b72db664564c60197368e08dbd5ea5dcf8c50d
 G
 styles/breakpoints.scss,b\b\bb5091fb050dea11b8c2677d6a2668acbef5d658
-C
-styles/globals.scss,f\c\fc1cf7dab6c0bfb446668fc7d76de54e84466829
 G
 styles/home.module.scss,1\c\1c44d8ee27274a72a4b048ca96bdf8cd863248d1
-N
-styles/landingPage.module.scss,7\6\7611f2bdecab9d2a28d8ed7c574ad10f1a9f57ab
+G
+lib/api/apolloClient.ts,6\a\6a310a8176e655846dea06d428e27f3fdd0bedf8

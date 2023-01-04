@@ -1,11 +1,22 @@
-##Praktik på Getit Nordic
-##Projekt https://gethub.se/
+## Internship GetIt Nordic
 
-##Carin Wood & Ursula Vallejo
+- [GetItNordic Web Page](https://getitnordic.com/)
 
-# Introduktion:
+- [Web Page of the Project: GetHub](https://gethub.se/)
 
-I utvecklingen av projektet har vi använt nya verktyg som vi var tvungna att lära oss och implementera. Vi kommer att utforska lite nedan.
+## Project realized by Carin Wood & Ursula Vallejo.
+
+## Demo Project:
+
+
+
+# Detailed information: 
+
+## Introduction:
+
+In the development of the project, we have used new tools as Next JS, Contentful, GraphQl, Apolo Server, SEO. We will explore in detailed below.
+
+Here is the layout we implemented on the project provided by the Ux designer of the company:
 
 - [WireFrames](https://xd.adobe.com/view/48935ae1-817e-41da-98ee-fc309c57a868-1dc0/screen/b2dc6744-2297-4621-bedf-50e433995c55/specs/)
 
@@ -13,8 +24,9 @@ I utvecklingen av projektet har vi använt nya verktyg som vi var tvungna att l�
 # Next.Js
 
 * SEO :
-Det ger oss möjlighet att tillhandahålla SEO-datainformation för att bättre positionera vår sida i sökningar.
 
+  It allows us to provide SEO data information to better position our site in searches.
+* 
 ```javascript
 <index.js>
     import Head from "next/head";
@@ -82,9 +94,9 @@ Det ger oss möjlighet att tillhandahålla SEO-datainformation för att bättre 
 
 * API: 
 
-API hanteras i samma mapp i projektet. 
+The API is managed in the same folder in the project.
 
-Backend hanteras inom samma project, det finns inget behov av att generera en klient och en server side.
+In Next JS the Backend is managed within the same project, there is no need to generate a client and a server side.
 
 ```javascript
 import {
@@ -127,16 +139,17 @@ export { client };
 ```
 
 * Router:  
-Sidorna som genereras i pages-mappen genererar sin router utan att behöva konfigurera dem.
 
-Det finns olika typer av sätt att använda routern:
+On Next JS the pages generated inside the pages folder generate automatically their router without having to configure them.
 
-- Routing med Pages
+There are different types of ways to use the router:
+
+- Routing with Pages
 - Nested Routes
 - Dynamic Rotes [slug]
 
-I vårt projekt implementerar vi den dynamiska router för landningssidan. Router namn är hämtat från [slug] som tilldelats den i contentful. 
-Därför kan det variera utan att behöva gå in i programmering.
+In our project we implement the dynamic router for the landing page. Router name is taken from [slug] assigned to it in contentful.
+Therefore, it can vary without having to go into programming.
 
 [<img src="./styles/assets/images/next.png" width="300"/>](./styles/assets/images/next.png)
 
@@ -145,7 +158,7 @@ Därför kan det variera utan att behöva gå in i programmering.
 - [Next Tutorial Codevolution](https://youtu.be/9P8mASSREYM)
 
 
-* Data Fetching från Contentful med GetServerSideProps:
+* Data Fetching from Contentful with GetServerSideProps:
 
 - Render Sections 
 ```javascript
@@ -235,7 +248,7 @@ export const getSection = (typename: string, id: string): JSX.Element => {
 return sectionsMap.has(typename) ? sectionsMap.get(typename)(id) : null;
 };
 ```
-* Locale:  i18next-implementering för att hantera locale kopplad till contentful.
+* Locale:  i18next implementation to handle locale attached to contentful.
 
 - [i18next](https://next.i18next.com/)
 
@@ -244,10 +257,11 @@ return sectionsMap.has(typename) ? sectionsMap.get(typename)(id) : null;
 
 # GraphQL
 
-GraphQL är ett frågespråk för APIs.
-Det gör det möjligt att göra mer exakta API query genom att minska mängden data som importeras, vilket gör det mer effektivt och snabbare.
+GraphQL is a query language for APIs.
 
-I contentful finns en app som hjälper till att generera GraphQl-frågorna för projektet
+It makes it possible to make more precise API queries by reducing the amount of data imported, making it more efficient and faster.
+
+Contentful has an app that helps generate the GraphQl queries for the project
 
 [<img src="./styles/assets/images/GraphQL.png" width="200"/>](./styles/assets/images/GraphQL.png)
 
@@ -298,9 +312,11 @@ export const getHomePageQuery = (): DocumentNode => {
 
 # Contentful
 
-Contentful är ett huvudlöst innehållshanteringssystem. 
+Contentful is a headless content management system.
 
-Contentful är plattformen där du kan uppdatera innehållet på din webbplats, en mobilapp eller någon annan plattform som visar innehåll
+Contentful is the platform where you can update the content of your website, a mobile app or any other platform that displays content.
+
+Contentful give the option to handle locale; that way is possible to have the page in different language in our case Swedish and English.
 
 ```javascript
 <env.local>
@@ -327,8 +343,8 @@ Contentful är plattformen där du kan uppdatera innehållet på din webbplats, 
 
 # SASS
 
-Sass står för Syntactically Awesome Stylesheet. Sass är ett tillägg till CSS. Sass är en CSS pre-processor. Sass är helt kompatibel med alla versioner av CSS. 
-Sass minskar upprepning av CSS och sparar därför tid.
+Sass stands for Syntactically Awesome Stylesheet. Sass is an extension to CSS. Sass is a CSS pre-processor. Sass is fully compatible with all versions of CSS.
+Sass reduces repetition of CSS and therefore saves time.
 
 
 [<img src="./styles/assets/images/SASS1.webp" width="700"/>](./styles/assets/images/SASS1.webp)
@@ -388,10 +404,9 @@ Sass minskar upprepning av CSS och sparar därför tid.
 
 # Sendgrid
 
-SendGrid är en molnbaserad SMTP-leverantör som låter dig skicka e-post utan att behöva underhålla e-postservrar. 
+SendGrid is a cloud-based SMTP provider that allows you to send email without having to maintain email servers.
 
-SendGrid hanterar alla tekniska detaljer, från skalning av infrastrukturen till ISP-uppsökande och rykteövervakning till vitlistatjänster och realtidsanalys.
-
+SendGrid handles all the technical details, from infrastructure scaling to ISP outreach and reputation monitoring to whitelist services and real-time analytics.
 
 ```javascript
 <pages / sendgrid.js>
