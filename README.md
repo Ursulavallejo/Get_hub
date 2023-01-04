@@ -5,7 +5,7 @@
 
 - [Web Page of the version Project is launch: www.GetHub.es](https://gethub.se/)
 
-- [Demo with all the implementation : Netufly](https://gethub-demo-projekt.netlify.app/)
+- [Demo with all the implementation : Netlify](https://gethub-demo-projekt.netlify.app/)
 
 
 
